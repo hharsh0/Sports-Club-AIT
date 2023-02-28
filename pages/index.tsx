@@ -114,10 +114,15 @@ export default function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable components",
+    title: "Pace Registrations Now Open",
     description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
+      "Register for pune's biggest sports event. The registrations are now open for the 2023 edition of PACE.",
     large: true,
+    demo: (
+      <div>
+        <Image alt="contact" src="/paceregister.png" width={200} height={200} />
+      </div>
+    ),
   },
   {
     title: "Contact Us",
