@@ -74,7 +74,7 @@ export default function Layout({
                       <Link href="team">Our Team</Link>
                     </motion.button>
                     <motion.button
-                      className="rounded-full border border-black bg-black p-1.5 px-4 text-sm transition-all text-white hover:text-black"
+                      className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black hover:text-black"
                       {...FADE_IN_ANIMATION_SETTINGS}
                     >
                       <Link href="contact">Contact Us</Link>
