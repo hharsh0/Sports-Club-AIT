@@ -131,7 +131,7 @@ const features = [
     description:
       "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
     demo: (
-      <a href={DEPLOY_URL}>
+      <a href="">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://vercel.com/button"
