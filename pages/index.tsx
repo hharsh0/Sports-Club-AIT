@@ -29,7 +29,7 @@ export default function Home() {
           href=""
           target="_blank"
           rel="noreferrer"
-          className="mx-auto mb-5  flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          className="mx-auto mb-5 invisible  flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">Sports Club</p>
