@@ -68,7 +68,7 @@ function DropMenu() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/">
+                <Link href="/gallary">
                   <div className="block bg-white px-4 py-2 text-sm text-zinc-700">
                     <div className="flex flex-row">
                       <ImageIcon className="mr-4 mt-0.5" /> Gallary
@@ -77,7 +77,7 @@ function DropMenu() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/">
+                <Link href="/team">
                   <div className="block bg-white px-4 py-2 text-sm text-zinc-700">
                     <div className="flex flex-row">
                       <PersonIcon className="mr-4 mt-0.5" /> Our Team
@@ -86,7 +86,7 @@ function DropMenu() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/">
+                <Link href="/contact">
                   <div className="block bg-white px-4 py-2 text-sm text-zinc-700">
                     <div className="flex flex-row">
                       <EnvelopeClosedIcon className="mr-4 mt-0.5" /> Contacts
