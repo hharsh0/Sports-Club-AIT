@@ -97,7 +97,7 @@ export default function Layout({
           </div>
         </div>
       </div>
-      <main className="flex w-screen flex-col items-center justify-center py-32">
+      <main className="flex w-screen flex-col items-center justify-center py-28">
         {children}
       </main>
       <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">

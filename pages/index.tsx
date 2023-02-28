@@ -3,7 +3,6 @@ import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
-import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="max-w-7xl my-10 px-5 xl:px-0"
+        className="max-w-7xl my-10 px-5 xl:px-0 bg-[url('/bg.jpg')]"
         initial="hidden"
         whileInView="show"
         animate="show"
@@ -123,47 +122,41 @@ const features = [
   {
     title: "Contact Us",
     description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
-    demo: <WebVitals />,
-  },
-  {
-    title: "Events",
-    description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
+      "We take our commitment to students seriously. We are always here, If you have any query feel free to mail us anytime.",
     demo: (
-      <a href="">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-          width={120}
-        />
-      </a>
-    ),
-  },
-  {
-    title: "Built-in Auth + Database",
-    description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
-        <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
+      <div>
+        <Image alt="contact" src="/contact.png" width={200} height={200} />
       </div>
     ),
   },
   {
-    title: "Hooks, utilities, and more",
+    title: "Events",
     description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
+      "Every year sports club organizes events for introducing students to the world of sports.",
     demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
+      <div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <Image alt="contact" src="/events.png" width={200} height={200} />
+      </div>
+    ),
+  },
+  {
+    title: "Our Team",
+    description:
+      "We are a group of students who are passionate about sports and want to make sports a part of every student's life.",
+    demo: (
+      <div>
+        <Image alt="contact" src="/team.png" width={200} height={200} />
+      </div>
+    ),
+  },
+  {
+    title: "Gallary",
+    description:
+      "We have a nice collection of photos of our events and sports activities.",
+    demo: (
+      <div>
+        <Image alt="contact" src="/gallary.png" width={200} height={200} />
       </div>
     ),
   },
