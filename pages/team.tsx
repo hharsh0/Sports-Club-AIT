@@ -6,7 +6,7 @@ function Team() {
   return (
     <div className="relative flex w-screen flex-col items-center">
       <div className="flex justify-center text-5xl font-medium">Our Team</div>
-      <div className='my-10'>
+      <div className='my-10 px-5 text-center'>
         More than a community we all are a family, this bond will last forever
         and we will always be there for you whenever you will need our help.
       </div>

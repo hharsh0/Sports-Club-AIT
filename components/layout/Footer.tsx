@@ -161,9 +161,9 @@ function Footer() {
               alt="Precedent logo"
               width="30"
               height="30"
-              className="mr-2 rounded-sm"
+              className="mr-2 rounded-sm hidden lg:block"
             ></Image>
-            <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+            <ul className="mt-8 flex justify-center gap-6 sm:mt-0 sm:justify-end">
               <li>
                 <a
                   href="https://www.facebook.com/groups/793403114032949"

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="max-w-7xl my-10 px-5 xl:px-0 bg-[url('/bg.jpg')]"
+        className="max-w-7xl my-10 px-5 xl:px-0"
         initial="hidden"
         whileInView="show"
         animate="show"
