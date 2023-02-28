@@ -8,7 +8,7 @@ function Team() {
       <div className="flex justify-center text-5xl font-medium">Our Team</div>
       <div className='my-10'>
         More than a community we all are a family, this bond will last forever
-        and we'll always be there for you whenever you'll need our help.
+        and we will always be there for you whenever you will need our help.
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <Card
