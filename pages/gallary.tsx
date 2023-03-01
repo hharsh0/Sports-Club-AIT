@@ -8,9 +8,9 @@ function Gallary() {
     <div className="relative">
       <section className="body-font">
         <div className="container mx-auto px-5">
-          <div className="flex w-full max-w-screen-xl items-center justify-between">
+          <div className="flex flex-col md:flex-row lg:flex-row w-full max-w-screen-xl items-center justify-between">
             {/* Text */}
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2 md:w-1/2">
               <div className="text-5xl font-medium">Gallary</div>
               <div className="my-10 text-lg text-gray-600">
                 We have a nice collection of photos of various events organised

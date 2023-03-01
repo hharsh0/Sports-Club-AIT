@@ -7,9 +7,9 @@ import { RoughNotation } from "react-rough-notation";
 function Team() {
   return (
     <div className="relative my-4 flex w-screen flex-col items-center">
-      <div className="flex w-full max-w-screen-xl items-center justify-between">
+      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between md:flex-row lg:flex-row px-5">
         {/* Text */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2 lg:w-1/2">
           <div className="text-5xl font-medium">Meet the sports club Crew</div>
           <div className="my-10 text-lg text-gray-600">
             More than a community we all are a family, this bond will last
