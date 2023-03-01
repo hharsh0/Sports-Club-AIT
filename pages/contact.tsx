@@ -6,33 +6,28 @@ function Contact() {
   return (
     <>
       <div className="relative my-4 flex w-screen flex-col items-center">
-        <div className="flex w-full max-w-screen-xl items-center justify-between">
+        <div className="flex w-full px-5 max-w-screen-xl flex-col items-center justify-between md:flex-row lg:flex-row">
           {/* Text */}
-          <div className="w-1/2">
-            <div className="text-5xl font-medium">
-              Meet the sports club Crew
-            </div>
+          <div className="w-full md:w-1/2 lg:w-1/2">
+            <div className="text-5xl font-medium">Get In Touch</div>
             <div className="my-10 text-lg text-gray-600">
-              More than a community we all are a family, this bond will last
-              forever and we will always be there for you whenever you will need
-              our help.
+              We take our commitment to students seriously. We are always here,
+              If you have any query feel free to mail us anytime.
             </div>
           </div>
           {/* Image */}
           <div className="animate-[slide-down-fade_0.9s_ease-in-out]">
             <Image
               className=""
-              src="/teampage.png"
+              src="/contact.png"
               width={400}
               height={400}
-              alt="Team"
+              alt="contact"
             />
           </div>
         </div>
 
-        <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-          
-        </div>
+        <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0"></div>
       </div>
     </>
   );
