@@ -11,15 +11,14 @@ function Gallary() {
           <div className="flex w-full max-w-screen-xl items-center justify-between">
             {/* Text */}
             <div className="w-1/2">
-              <div className="text-5xl font-medium">
-                Gallary
-              </div>
+              <div className="text-5xl font-medium">Gallary</div>
               <div className="my-10 text-lg text-gray-600">
-                We have a nice collection of photos of various events organised by the ait sports club throughout the year.
+                We have a nice collection of photos of various events organised
+                by the ait sports club throughout the year.
               </div>
             </div>
             {/* Image */}
-            <div className="">
+            <div className="animate-[slide-down-fade_0.9s_ease-in-out]">
               <Image
                 className=""
                 src="/gallarypage.png"

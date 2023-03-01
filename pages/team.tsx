@@ -7,7 +7,7 @@ import { RoughNotation } from "react-rough-notation";
 function Team() {
   return (
     <div className="relative my-4 flex w-screen flex-col items-center">
-      <div className="flex w-full max-w-screen-xl justify-between items-center">
+      <div className="flex w-full max-w-screen-xl items-center justify-between">
         {/* Text */}
         <div className="w-1/2">
           <div className="text-5xl font-medium">Meet the sports club Crew</div>
@@ -18,7 +18,7 @@ function Team() {
           </div>
         </div>
         {/* Image */}
-        <div className="">
+        <div className="animate-[slide-down-fade_0.9s_ease-in-out]">
           <Image
             className=""
             src="/teampage.png"
