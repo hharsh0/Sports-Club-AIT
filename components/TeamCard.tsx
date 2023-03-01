@@ -1,29 +1,66 @@
-import React from 'react'
+import { ReactNode } from "react";
+import ReactMarkdown from "react-markdown";
+import Balancer from "react-wrap-balancer";
+import {
+  InstagramLogoIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon
+} from "@radix-ui/react-icons";
 
-function TeamCard() {
+export default function TeamCard({
+  title,
+  description,
+  demo,
+  large,
+}: {
+  title: string;
+  description: string;
+  demo: ReactNode;
+  large?: boolean;
+}) {
   return (
-    <article className="group">
-      <img
-        alt="Lava"
-        src="https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
-      />
-      <div className="p-4">
-        <a href="#">
-          <h3 className="text-lg font-medium text-gray-900">
-            Finding the Journey to Mordor
-          </h3>
-        </a>
-        <p className="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-          dolores, possimus pariatur animi temporibus nesciunt praesentium
-          dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus
-          soluta, voluptates neque explicabo tempora nisi culpa eius atque
-          dignissimos. Molestias explicabo corporis voluptatem?
-        </p>
+    <div
+      className={`min-h-96 relative col-span-1  overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
+        large ? "md:col-span-2" : ""
+      }`}
+    >
+      <div className="flex h-60 items-center justify-center">{demo}</div>
+      <div className="mx-auto max-w-md text-center">
+        <h2 className="mt-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
+          <Balancer>{title}</Balancer>
+        </h2>
+        <div className="prose-sm -mt-2 px-4 leading-normal text-gray-500 md:prose">
+          <Balancer>
+            <ReactMarkdown
+              components={{
+                a: ({ node, ...props }) => (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    {...props}
+                    className="font-medium text-gray-800 underline transition-colors"
+                  />
+                ),
+                code: ({ node, ...props }) => (
+                  <code
+                    {...props}
+                    // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
+                    inline="true"
+                    className="rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800"
+                  />
+                ),
+              }}
+            >
+              {description}
+            </ReactMarkdown>
+            <div className="flex items-center justify-between py-4">
+              <InstagramLogoIcon className="h-6 w-6" />
+              <GitHubLogoIcon className="h-6 w-6" />
+              <LinkedInLogoIcon className="h-6 w-6" />
+            </div>
+          </Balancer>
+        </div>
       </div>
-    </article>
+    </div>
   );
 }
-
-export default TeamCard

@@ -1,17 +1,36 @@
 import React from 'react'
 import TeamCard from '@/components/TeamCard';
-import Card from '@/components/home/card';
+import Image from 'next/image';
+import { RoughNotation } from "react-rough-notation";
+
 
 function Team() {
   return (
-    <div className="relative flex w-screen flex-col items-center">
-      <div className="flex justify-center text-5xl font-medium">Our Team</div>
-      <div className='my-10 px-5 text-center'>
-        More than a community we all are a family, this bond will last forever
-        and we will always be there for you whenever you will need our help.
+    <div className="relative my-4 flex w-screen flex-col items-center">
+      <div className="flex w-full max-w-screen-xl justify-between items-center">
+        {/* Text */}
+        <div className="w-1/2">
+          <div className="text-5xl font-medium">Meet the sports club Crew</div>
+          <div className="my-10 text-lg text-gray-600">
+            More than a community we all are a family, this bond will last
+            forever and we will always be there for you whenever you will need
+            our help.
+          </div>
+        </div>
+        {/* Image */}
+        <div className="">
+          <Image
+            className=""
+            src="/teampage.png"
+            width={400}
+            height={400}
+            alt="Team"
+          />
+        </div>
       </div>
+
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}
@@ -25,7 +44,7 @@ function Team() {
             </>
           }
         />
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}
@@ -39,7 +58,7 @@ function Team() {
             </>
           }
         />
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}
@@ -53,7 +72,7 @@ function Team() {
             </>
           }
         />
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}
@@ -67,7 +86,7 @@ function Team() {
             </>
           }
         />
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}
@@ -81,7 +100,7 @@ function Team() {
             </>
           }
         />
-        <Card
+        <TeamCard
           title="Team member"
           description="This is the discription of team member"
           large={false}

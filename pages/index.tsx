@@ -120,7 +120,7 @@ const features = [
     large: true,
     demo: (
       <div>
-        <Image alt="contact" src="/paceregister.png" width={200} height={200} />
+        <Image alt="pace-registration" src="/paceregister.png" width={200} height={200} />
       </div>
     ),
   },

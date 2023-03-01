@@ -100,7 +100,7 @@ export default function Layout({
       <main className="flex w-screen flex-col items-center justify-center py-28">
         {children}
       </main>
-      <div className="absolute w-full border-t border-gray-200 bg-white py-5 text-center">
+      <div className="relative w-full border-t border-gray-200 bg-white py-5 text-center">
         <Footer />
       </div>
     </>
