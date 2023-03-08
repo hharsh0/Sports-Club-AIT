@@ -1,16 +1,16 @@
 import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
-import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
-import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <motion.div
-        className="max-w-7xl my-10 px-5 xl:px-0"
+        className="my-10 max-w-7xl px-5 xl:px-0"
         initial="hidden"
         whileInView="show"
         animate="show"
@@ -29,7 +29,7 @@ export default function Home() {
           href=""
           target="_blank"
           rel="noreferrer"
-          className="mx-auto mb-5 invisible  flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
+          className="invisible mx-auto mb-5  flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">Sports Club</p>
@@ -57,11 +57,8 @@ export default function Home() {
           className="mx-auto mt-6 flex items-center justify-center space-x-5"
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
-          <a
-            className="group cursor-pointer flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
-            // href={DEPLOY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link href='pace/events'
+            className="group flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
           >
             <svg
               className="h-4 w-4 group-hover:text-black"
@@ -78,34 +75,26 @@ export default function Home() {
               />
             </svg>
             <p>Pace Registration</p>
-          </a>
-          <a
-            className="flex cursor-pointer max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            // href="https://github.com/steven-tey/precedent"
-            target="_blank"
-            rel="noopener noreferrer"
+          </Link>
+          <Link href="pace/events"
+            className="flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
           >
             <Github />
             <p>Check Events</p>
-          </a>
+          </Link>
         </motion.div>
       </motion.div>
       {/* here we are animating with Tailwind instead of Framer Motion because Framer Motion messes up the z-index for child components */}
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large }) => (
-          <Card
-            key={title}
-            title={title}
-            description={description}
-            demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
-            }
-            large={large}
-          />
+        {features.map(({ title, description, demo, large,link }) => (
+            <Card
+              key={title}
+              title={title}
+              description={description}
+              demo={demo}
+              large={large}
+              link={link}
+            />
         ))}
       </div>
     </>
@@ -123,6 +112,7 @@ const features = [
         <Image alt="pace-registration" src="/paceregister.png" width={200} height={200} />
       </div>
     ),
+    link: "/pace"
   },
   {
     title: "Contact Us",
@@ -133,6 +123,7 @@ const features = [
         <Image alt="contact" src="/contact.png" width={200} height={200} />
       </div>
     ),
+    link: '/contact'
   },
   {
     title: "Events",
@@ -144,6 +135,7 @@ const features = [
         <Image alt="contact" src="/events.png" width={200} height={200} />
       </div>
     ),
+    link: '/pace/events'
   },
   {
     title: "Our Team",
@@ -154,6 +146,7 @@ const features = [
         <Image alt="contact" src="/team.png" width={200} height={200} />
       </div>
     ),
+    link: '/team'
   },
   {
     title: "Gallary",
@@ -164,5 +157,6 @@ const features = [
         <Image alt="contact" src="/gallary.png" width={200} height={200} />
       </div>
     ),
+    link: '/gallary'
   },
 ];

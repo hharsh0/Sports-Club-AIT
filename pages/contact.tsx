@@ -1,8 +1,44 @@
-import React from 'react'
-import ContactLink from '@/components/ContactLink';
+import { useState } from 'react'
 import Image from 'next/image';
 
+
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 function Contact() {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData)
+    // fetch("/api/send-email", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(formData),
+    // }).then((res) => {
+    //   console.log("Response received");
+    //   if (res.status === 200) {
+    //     console.log("Response succeeded!");
+    //   }
+    // });
+  };
+
   return (
     <>
       <div className="relative my-4 flex w-screen flex-col items-center">
@@ -27,7 +63,68 @@ function Contact() {
           </div>
         </div>
 
-        <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0"></div>
+        <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+          <form className='' onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <label
+                className="mb-2 block font-bold text-gray-700"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 focus:outline-none"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="mb-2 block font-bold text-gray-700"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 focus:outline-none"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                className="mb-2 block font-bold text-gray-700"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 focus:outline-none"
+                id="message"
+                name="message"
+                placeholder="Your message"
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex items-center justify-center">
+              <button
+                className="focus:shadow-outline rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none w-full"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );

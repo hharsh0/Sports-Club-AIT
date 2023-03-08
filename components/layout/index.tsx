@@ -57,7 +57,6 @@ export default function Layout({
                   <div className="flex hidden space-x-2 md:block lg:block">
                     <motion.button
                       className="rounded-full border p-1.5 px-4 text-sm transition-all hover:text-black"
-                      {...FADE_IN_ANIMATION_SETTINGS}
                     >
                       <Link href="/">Home</Link>
                     </motion.button>
