@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Image from 'next/image';
-import EventsCard from '@/components/EventCard';
+import TeamEvents from '@/components/pace/TeamEvents';
+import IndividualEvents from '@/components/pace/IndividualEvents';
+
 
 function Events() {
+  const [isTeamEvent, setIsTeamEvent] = useState(true)
   return (
     <>
       <div className="relative my-4 flex w-screen flex-col items-center">
@@ -11,7 +14,7 @@ function Events() {
           <div className="w-full text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
             <div className="text-5xl font-medium">Pace events</div>
             <div className="my-10 text-lg text-gray-600">
-              List of all events that is going to be help in PACE 2023
+              List of all events that is going to be held in PACE 2023.
             </div>
           </div>
           {/* Image */}
@@ -25,93 +28,46 @@ function Events() {
             />
           </div>
         </div>
-
-        <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-          <EventsCard
-            title="Table tennis"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
+        {/* Tabs */}
+        <div>
+          <ul className="flex w-full border-b border-gray-100 text-lg">
+            <li onClick={() => setIsTeamEvent(true)} className="cursor-pointer">
+              <div className="relative block p-4">
+                <span
+                  className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                    isTeamEvent && "bg-pink-600"
+                  }`}
                 />
-              </>
-            }
-            link="register/table-tennis"
-          />
-          <EventsCard
-            title="Football"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-              </>
-            }
-            link="register/football"
-          />
-          <EventsCard
-            title="Basketball"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-              </>
-            }
-            link="register/basketball"
-          />
-          <EventsCard
-            title="Badminton"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-              </>
-            }
-            link="register/badminton"
-          />
-          <EventsCard
-            title="Lawn tennis"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-              </>
-            }
-            link="register/lawn-tennis"
-          />
-          <EventsCard
-            title="Volleyball"
-            description="This is the discription of event"
-            demo={
-              <>
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center"
-                  src="https://dummyimage.com/600x360"
-                />
-              </>
-            }
-            link="register/volleyball"
-          />
+                <div className="flex items-center justify-center gap-4">
+                  <Image src="/group1.png" height={25} width={25} alt="icon" />
+                  <span className="text-lg font-medium text-gray-900">
+                    {" "}
+                    Team Events{" "}
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li onClick={() => setIsTeamEvent(false)} className="cursor-pointer">
+              <div className="relative block p-4">
+                <span className={`${!isTeamEvent && 'bg-pink-600'} absolute inset-x-0 -bottom-px h-px w-full`} />
+                <div className="flex items-center justify-center gap-4">
+                  <Image
+                    src="/individual.png"
+                    height={25}
+                    width={25}
+                    alt="icon"
+                  />
+                  <span className="text-lg font-medium text-gray-900">
+                    {" "}
+                    Individual Events{" "}
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+        {/* Cards */}
+        {isTeamEvent ? <TeamEvents /> : <IndividualEvents />}
       </div>
     </>
   );

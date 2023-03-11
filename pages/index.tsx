@@ -2,7 +2,7 @@ import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
+import { Twitter } from "@/components/shared/icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -39,7 +39,7 @@ export default function Home() {
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
           <Balancer>
-            Army institute of technology <br /> Sports club
+            Army Institute of Technology <br /> Sports club
           </Balancer>
         </motion.h1>
         <motion.p
@@ -79,7 +79,7 @@ export default function Home() {
           <Link href="pace/events"
             className="flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
           >
-            <Github />
+            <Image src='/events1.png' height={25} width={25} alt='events' />
             <p>Check Events</p>
           </Link>
         </motion.div>

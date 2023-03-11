@@ -29,24 +29,59 @@ function Team() {
         </div>
       </div>
 
+      <div>
+        <ul className="flex w-full border-b border-gray-100 text-lg">
+          <li className="cursor-pointer">
+            <div className="relative block p-4">
+              <span
+                className={`absolute inset-x-0 -bottom-px h-px w-full bg-pink-600`}
+              />
+              <div className="flex items-center justify-center gap-4">
+                <Image src="/group1.png" height={25} width={25} alt="icon" />
+                <span className="text-lg font-medium text-gray-900">
+                  {" "}
+                  Core Team{" "}
+                </span>
+              </div>
+            </div>
+          </li>
+          <li className="cursor-pointer">
+            <div className="relative block p-4">
+              <span
+                className={`
+                absolute inset-x-0 -bottom-px h-px w-full`}
+              />
+              <div className="flex items-center justify-center gap-4">
+                <Image
+                  src="/individual.png"
+                  height={25}
+                  width={25}
+                  alt="icon"
+                />
+                <span className="text-lg font-medium text-gray-900">
+                  {" "}
+                  Event Heads{" "}
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Team member"
-          description="This is the discription of team member"
+          title="Arajeet Pandey"
+          description="Sports Secretary"
           large={false}
           demo={
             <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
+              <Image alt="contact" src="/team/core/arajeet.jpeg" width={200} height={200} />
             </>
           }
         />
         <TeamCard
           title="Team member"
-          description="This is the discription of team member"
+          description="Sports Secretary"
           large={false}
           demo={
             <>

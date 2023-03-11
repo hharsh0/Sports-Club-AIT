@@ -29,18 +29,18 @@ function Gallary() {
             </div>
           </div>
           <div className="-m-4 flex animate-[slide-down-fade_0.9s_ease-in-out] flex-wrap">
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard />
+            <ImageCard src="/gallary/photo1.jpeg" />
+            <ImageCard src="/gallary/photo2.jpeg" />
+            <ImageCard src="/gallary/photo3.jpeg" />
+            <ImageCard src="/gallary/photo4.png" />
+            <ImageCard src="/gallary/photo5.png" />
+            <ImageCard src="/gallary/photo6.png" />
+            <ImageCard src="/gallary/photo7.png" />
+            <ImageCard src="/gallary/photo1.jpeg" />
+            <ImageCard src="/gallary/photo1.jpeg" />
+            <ImageCard src="/gallary/photo1.jpeg" />
+            <ImageCard src="/gallary/photo1.jpeg" />
+            <ImageCard src="/gallary/photo1.jpeg" />
           </div>
         </div>
       </section>
