@@ -70,7 +70,7 @@ function Register() {
               className="mt-8 grid grid-cols-6 gap-6"
             >
               <div className="col-span-6 my-4 text-2xl">
-                Team Leader Detail's
+                Team Leader Details
               </div>
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-900">
@@ -149,7 +149,7 @@ function Register() {
                 />
               </div>
               <div className="col-span-6 mt-4 text-2xl">
-                Team Members Detail's
+                Team Members Details
               </div>
               {teamMembers.map((teamMember: any, index: any) => (
                 <div key={index} className="col-span-6 sm:col-span-3">
