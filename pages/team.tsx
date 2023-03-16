@@ -1,10 +1,13 @@
-import React from 'react'
+import {useState} from 'react'
 import TeamCard from '@/components/TeamCard';
 import Image from 'next/image';
-import { RoughNotation } from "react-rough-notation";
+import CoreTeam from '@/components/team/CoreTeam';
+import EventHeads from '@/components/team/EventHeads';
+
 
 
 function Team() {
+  const [isCoreTeam, setIsCoreTeam] = useState(true);
   return (
     <div className="relative my-4 flex w-screen flex-col items-center">
       <div className="flex w-full max-w-screen-xl flex-col items-center justify-between px-5 md:flex-row lg:flex-row">
@@ -32,9 +35,14 @@ function Team() {
       <div>
         <ul className="flex w-full border-b border-gray-100 text-lg">
           <li className="cursor-pointer">
-            <div className="relative block p-4">
+            <div
+              onClick={() => setIsCoreTeam(true)}
+              className="relative block p-4"
+            >
               <span
-                className={`absolute inset-x-0 -bottom-px h-px w-full bg-pink-600`}
+                className={`absolute inset-x-0 -bottom-px h-px w-full ${
+                  isCoreTeam && "bg-pink-600"
+                }`}
               />
               <div className="flex items-center justify-center gap-4">
                 <Image src="/group1.png" height={25} width={25} alt="icon" />
@@ -46,10 +54,15 @@ function Team() {
             </div>
           </li>
           <li className="cursor-pointer">
-            <div className="relative block p-4">
+            <div
+              onClick={() => setIsCoreTeam(false)}
+              className="relative block p-4"
+            >
               <span
                 className={`
-                absolute inset-x-0 -bottom-px h-px w-full`}
+                absolute inset-x-0 -bottom-px h-px w-full  ${
+                  !isCoreTeam && "bg-pink-600"
+                }`}
               />
               <div className="flex items-center justify-center gap-4">
                 <Image
@@ -68,88 +81,7 @@ function Team() {
         </ul>
       </div>
 
-      <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
-          large={false}
-          demo={
-            <>
-              <Image alt="contact" src="/team/core/arajeet.jpeg" width={200} height={200} />
-            </>
-          }
-        />
-        <TeamCard
-          title="Team member"
-          description="Sports Secretary"
-          large={false}
-          demo={
-            <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
-            </>
-          }
-        />
-        <TeamCard
-          title="Team member"
-          description="This is the discription of team member"
-          large={false}
-          demo={
-            <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
-            </>
-          }
-        />
-        <TeamCard
-          title="Team member"
-          description="This is the discription of team member"
-          large={false}
-          demo={
-            <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
-            </>
-          }
-        />
-        <TeamCard
-          title="Team member"
-          description="This is the discription of team member"
-          large={false}
-          demo={
-            <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
-            </>
-          }
-        />
-        <TeamCard
-          title="Team member"
-          description="This is the discription of team member"
-          large={false}
-          demo={
-            <>
-              <img
-                alt="gallery"
-                className="absolute inset-0 object-cover object-center"
-                src="https://dummyimage.com/600x360"
-              />
-            </>
-          }
-        />
-      </div>
+      {isCoreTeam ? <CoreTeam /> : <EventHeads />}
     </div>
   );
 }

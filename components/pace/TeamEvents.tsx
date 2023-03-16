@@ -22,21 +22,6 @@ function TeamEvents() {
           link="register/cricket"
         />
         <EventsCard
-          title="Volleyball"
-          description="This is the discription of event"
-          demo={
-            <>
-              <Image
-                alt="pace-registration"
-                src="/pace/pace-cricket.png"
-                width={300}
-                height={300}
-              />
-            </>
-          }
-          link="register/volleyball"
-        />
-        <EventsCard
           title="Basketball"
           description="This is the discription of event"
           demo={
@@ -67,21 +52,6 @@ function TeamEvents() {
           link="register/football"
         />
         <EventsCard
-          title="Kabaddi"
-          description="This is the discription of event"
-          demo={
-            <>
-              <Image
-                alt="pace-registration"
-                src="/pace/pace-cricket.png"
-                width={300}
-                height={300}
-              />
-            </>
-          }
-          link="register/kabaddi"
-        />
-        <EventsCard
           title="Badminton"
           description="This is the discription of event"
           demo={
@@ -97,28 +67,13 @@ function TeamEvents() {
           link="register/badminton-team"
         />
         <EventsCard
-          title="Squash (Team)"
-          description="This is the discription of event"
-          demo={
-            <>
-              <Image
-                alt="pace-registration"
-                src="/pace/pace-cricket.png"
-                width={300}
-                height={300}
-              />
-            </>
-          }
-          link="register/squash-team"
-        />
-        <EventsCard
           title="Lawn Tennis"
           description="This is the discription of event"
           demo={
             <>
               <Image
                 alt="pace-registration"
-                src="/pace/pace-cricket.png"
+                src="/pace/pace-lawntennis.png"
                 width={300}
                 height={300}
               />
@@ -140,6 +95,53 @@ function TeamEvents() {
             </>
           }
           link="register/badminton-mix"
+        />
+        <EventsCard
+          title="Volleyball"
+          description="This is the discription of event"
+          demo={
+            <>
+              <Image
+                alt="pace-registration"
+                src="/pace/pace-volleyball.png"
+                width={250}
+                height={250}
+              />
+            </>
+          }
+          link="register/volleyball"
+        />
+
+        <EventsCard
+          title="Kabaddi"
+          description="This is the discription of event"
+          demo={
+            <>
+              <Image
+                alt="pace-registration"
+                src="/pace/pace-cricket.png"
+                width={300}
+                height={300}
+              />
+            </>
+          }
+          link="register/kabaddi"
+        />
+
+        <EventsCard
+          title="Squash (Team)"
+          description="This is the discription of event"
+          demo={
+            <>
+              <Image
+                alt="pace-registration"
+                src="/pace/pace-squash.png"
+                width={300}
+                height={300}
+              />
+            </>
+          }
+          link="register/squash-team"
         />
         <EventsCard
           title="Table Tennis (Team)"

@@ -1,6 +1,7 @@
 import { useState,useRef } from "react";
 import Steps from "../../../components/Steps";
 import { useRouter } from "next/router";
+import {projectFirestore} from '../../../firebase/config'
 
 
 function Register() {
@@ -8,6 +9,17 @@ function Register() {
   const router = useRouter();
   const { slug } = router.query;
   const [teamMembers, setTeamMembers] = useState<any>([]);
+  const [selectedOptionYear, setSelectedOptionYear] = useState("");
+  const [selectedOptionGame, setSelectedOptionGame] = useState("");
+
+  const handleOptionChange = (event: any) => {
+    setSelectedOptionYear(event.target.value);
+  };
+
+  const handleOptionChangeGame = (event: any) => { 
+    setSelectedOptionGame(event.target.value);
+  }
+
   
 
   const handleClick = () => {
@@ -33,15 +45,18 @@ function Register() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     // @ts-ignore: Object is possibly 'null'.
-    const teamName = document.getElementById("TeamName").value;
+    const leaderName = document.getElementById("leader-name").value;
     // @ts-ignore: Object is possibly 'null'.
-    const teamLeaderName = document.getElementById("Name").value;
+    const collegeName = document.getElementById("college-name").value;
     // @ts-ignore: Object is possibly 'null'.
-    const teamLeaderEmail = document.getElementById("Email").value;
+    const teamLeaderEmail = document.getElementById("leader-email").value;
     // @ts-ignore: Object is possibly 'null'.
-    const teamLeaderPhone = document.getElementById("Game").value;
+    const gameChoosen = document.getElementById("Game").value;
     // @ts-ignore: Object is possibly 'null'.
     const teamLeaderAddress = document.getElementById("Address").value;
+
+    const yearOfStudy = selectedOptionYear;
+    const isTeamEvent = selectedOptionGame;
     // @ts-ignore: Object is possibly 'null'.
     const teamMembersDetails = teamMembers.map((teamMember, index) => ({
       // @ts-ignore: Object is possibly 'null'.
@@ -49,14 +64,27 @@ function Register() {
       // @ts-ignore: Object is possibly 'null'.
       email: document.getElementById(`teamMemberEmail${index}`).value,
     }));
-    console.log({
-      teamName,
-      teamLeaderName,
+
+    const body = {
+      leaderName,
+      collegeName,
       teamLeaderEmail,
-      teamLeaderPhone,
+      gameChoosen,
       teamLeaderAddress,
+      yearOfStudy,
+      isTeamEvent,
       teamMembersDetails,
-    });
+    };
+
+    console.log(body);
+
+    try {
+      projectFirestore.collection('teams').add(body)
+    }
+    catch (err) {
+      alert(err)
+    }
+
   };
 
   return (
@@ -74,11 +102,11 @@ function Register() {
               </div>
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-900">
-                  Team Name
+                  Name
                 </label>
                 <input
                   type="text"
-                  id="TeamName"
+                  id="leader-name"
                   name="team_name"
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
                 />
@@ -86,12 +114,12 @@ function Register() {
 
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-900">
-                  Name
+                  College Name
                 </label>
 
                 <input
                   type="text"
-                  id="Name"
+                  id="college-name"
                   name="last_name"
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
                 />
@@ -104,7 +132,7 @@ function Register() {
 
                 <input
                   type="email"
-                  id="Email"
+                  id="leader-email"
                   name="email"
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
                 />
@@ -135,6 +163,7 @@ function Register() {
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
                 />
               </div>
+
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-900">
                   Game
@@ -147,6 +176,115 @@ function Register() {
                   value={slug}
                   className="pointer-events-none mt-1 w-full cursor-not-allowed rounded-md border-gray-200 bg-white text-sm text-gray-900 opacity-75 shadow-sm focus:outline-none"
                 />
+              </div>
+              <div className="col-span-6 sm:col-span-3">
+                <label className="block text-sm font-medium text-gray-900">
+                  Year of Study
+                </label>
+
+                <>
+                  <div className="my-4 flex items-center">
+                    <input
+                      id="default-checkbox"
+                      type="checkbox"
+                      value="first-year"
+                      checked={selectedOptionYear === "first-year"}
+                      onChange={handleOptionChange}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="default-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      First year
+                    </label>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <input
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value="second-year"
+                      checked={selectedOptionYear === "second-year"}
+                      onChange={handleOptionChange}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      Second year
+                    </label>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <input
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value="third-year"
+                      checked={selectedOptionYear === "third-year"}
+                      onChange={handleOptionChange}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      Third year
+                    </label>
+                  </div>
+                  <div className="flex items-center">
+                    <input
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value="fourth-year"
+                      checked={selectedOptionYear === "fourth-year"}
+                      onChange={handleOptionChange}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      Forth year
+                    </label>
+                  </div>
+                </>
+              </div>
+              <div className="col-span-6 sm:col-span-3">
+                Is it a Team event?
+                <>
+                  <div className="my-4 flex items-center">
+                    <input
+                      id="default-checkbox"
+                      type="checkbox"
+                      value="yes"
+                      checked={selectedOptionGame === "yes"}
+                      onChange={handleOptionChangeGame}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="default-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      Yes
+                    </label>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <input
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value="no"
+                      checked={selectedOptionGame === "no"}
+                      onChange={handleOptionChangeGame}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      No
+                    </label>
+                  </div>
+                </>
               </div>
               <div className="col-span-6 mt-4 text-2xl">
                 Team Members Details

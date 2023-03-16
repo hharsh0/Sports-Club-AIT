@@ -24,6 +24,7 @@ export default function Home() {
           },
         }}
       >
+        
         <motion.a
           variants={FADE_DOWN_ANIMATION_VARIANTS}
           href=""
@@ -57,7 +58,8 @@ export default function Home() {
           className="mx-auto mt-6 flex items-center justify-center space-x-5"
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
-          <Link href='pace/events'
+          <Link
+            href="pace/events"
             className="group flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
           >
             <svg
@@ -76,25 +78,26 @@ export default function Home() {
             </svg>
             <p>Pace Registration</p>
           </Link>
-          <Link href="pace/events"
+          <Link
+            href="pace/events"
             className="flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
           >
-            <Image src='/events1.png' height={25} width={25} alt='events' />
+            <Image src="/events1.png" height={25} width={25} alt="events" />
             <p>Check Events</p>
           </Link>
         </motion.div>
       </motion.div>
       {/* here we are animating with Tailwind instead of Framer Motion because Framer Motion messes up the z-index for child components */}
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large,link }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              demo={demo}
-              large={large}
-              link={link}
-            />
+        {features.map(({ title, description, demo, large, link }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={demo}
+            large={large}
+            link={link}
+          />
         ))}
       </div>
     </>
@@ -109,10 +112,15 @@ const features = [
     large: true,
     demo: (
       <div>
-        <Image alt="pace-registration" src="/paceregister.png" width={200} height={200} />
+        <Image
+          alt="pace-registration"
+          src="/paceregister.png"
+          width={200}
+          height={200}
+        />
       </div>
     ),
-    link: "/pace"
+    link: "/pace",
   },
   {
     title: "Contact Us",
@@ -123,7 +131,7 @@ const features = [
         <Image alt="contact" src="/contact.png" width={200} height={200} />
       </div>
     ),
-    link: '/contact'
+    link: "/contact",
   },
   {
     title: "Events",
@@ -135,7 +143,7 @@ const features = [
         <Image alt="contact" src="/events.png" width={200} height={200} />
       </div>
     ),
-    link: '/pace/events'
+    link: "/pace/events",
   },
   {
     title: "Our Team",
@@ -146,17 +154,17 @@ const features = [
         <Image alt="contact" src="/team.png" width={200} height={200} />
       </div>
     ),
-    link: '/team'
+    link: "/team",
   },
   {
-    title: "Gallary",
+    title: "Gallery",
     description:
       "We have a nice collection of photos of our events and sports activities.",
     demo: (
       <div>
-        <Image alt="contact" src="/gallary.png" width={200} height={200} />
+        <Image alt="contact" src="/gallery.png" width={200} height={200} />
       </div>
     ),
-    link: '/gallary'
+    link: "/gallery",
   },
 ];

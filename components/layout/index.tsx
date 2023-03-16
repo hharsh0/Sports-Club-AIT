@@ -55,16 +55,14 @@ export default function Layout({
               {!session && status !== "loading" ? (
                 <div className="flex space-x-2">
                   <div className="flex hidden space-x-2 md:block lg:block">
-                    <motion.button
-                      className="rounded-full border p-1.5 px-4 text-sm transition-all hover:text-black"
-                    >
+                    <motion.button className="rounded-full border p-1.5 px-4 text-sm transition-all hover:text-black">
                       <Link href="/">Home</Link>
                     </motion.button>
                     <motion.button
                       className="rounded-full border p-1.5 px-4 text-sm transition-all hover:text-black"
                       {...FADE_IN_ANIMATION_SETTINGS}
                     >
-                      <Link href="/gallary">Gallary</Link>
+                      <Link href="/gallery">Gallery</Link>
                     </motion.button>
                     <motion.button
                       className="rounded-full border p-1.5 px-4 text-sm transition-all hover:text-black"

@@ -23,7 +23,7 @@ function Steps({ count }:prop) {
               <span className="hidden sm:ml-2 sm:block text-gray-900"> Details </span>
             </li>
 
-            <li className=" flex items-center bg-gray-300 p-2 rounded-lg">
+            {/* <li className=" flex items-center bg-gray-300 p-2 rounded-lg">
               <span
                 className={`h-6 w-6 rounded-full ${
                   count === 2 ? "bg-blue-600 text-white" : "bg-white text-black"
@@ -33,7 +33,7 @@ function Steps({ count }:prop) {
               </span>
 
               <span className="hidden text-gray-900 sm:ml-2 sm:block"> Address </span>
-            </li>
+            </li> */}
 
             <li className="dark:bg-background-color flex items-center bg-gray-300 p-2 rounded-lg">
               <span

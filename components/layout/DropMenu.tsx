@@ -1,24 +1,22 @@
 import { Menu, Transition } from "@headlessui/react";
 import { motion } from "framer-motion";
 import {
-    ImageIcon,
-    HamburgerMenuIcon,
-    HomeIcon,
-    PersonIcon,
-    Pencil1Icon,
-    EnvelopeClosedIcon
+  ImageIcon,
+  HamburgerMenuIcon,
+  HomeIcon,
+  PersonIcon,
+  Pencil1Icon,
+  EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
 import { Fragment, useState } from "react";
 import classNames from "classnames";
 import Link from "next/link";
 
-
-
 function DropMenu() {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleIcon = () => {
-      setIsOpen(!isOpen);
-    };
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleIcon = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div className="">
@@ -68,10 +66,10 @@ function DropMenu() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/gallary">
+                <Link href="/gallery">
                   <div className="block bg-white px-4 py-2 text-sm text-zinc-700">
                     <div className="flex flex-row">
-                      <ImageIcon className="mr-4 mt-0.5" /> Gallary
+                      <ImageIcon className="mr-4 mt-0.5" /> Gallery
                     </div>
                   </div>
                 </Link>
