@@ -58,10 +58,10 @@ export default function TeamCard({
               {description}
             </ReactMarkdown>
             <div className="flex w-full shrink-0 items-center justify-between py-4">
-              <a target="_blank" href={instagram}>
+              <a target="_blank" rel="noreferrer" href={instagram}>
                 <InstagramLogoIcon className="h-6 w-6 cursor-pointer" />
               </a>
-              <a target="_blank" href={linkedin}>
+              <a target="_blank" rel="noreferrer" href={linkedin}>
                 <LinkedInLogoIcon className="h-6 w-6 cursor-pointer" />
               </a>
             </div>
