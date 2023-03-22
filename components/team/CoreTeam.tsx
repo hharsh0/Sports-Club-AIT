@@ -10,6 +10,9 @@ function CoreTeam() {
           title="Arajeet Pandey"
           description="Sports Secretary"
           large={false}
+          instagram="https://www.instagram.com/arajeet_arj/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
+          
           demo={
             <>
               <Image
@@ -25,6 +28,8 @@ function CoreTeam() {
           title="Dasari Hema Sree"
           description="Sports Secretary"
           large={false}
+          instagram="https://www.instagram.com/hema_sree_dasari/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -41,6 +46,8 @@ function CoreTeam() {
           title="P Raju"
           description="TE Member"
           large={false}
+          instagram="https://www.instagram.com/0807raju"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -57,6 +64,8 @@ function CoreTeam() {
           title="Shiv raj"
           description="TE Member"
           large={false}
+          instagram="https://www.instagram.com/_while._.shiv_/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -72,6 +81,8 @@ function CoreTeam() {
           title="Fahad Faizan"
           description="TE Member"
           large={false}
+          instagram="https://www.instagram.com/_fahadfaiz/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -87,6 +98,8 @@ function CoreTeam() {
           title="Sahil Chahal"
           description="TE Member"
           large={false}
+          instagram="https://www.instagram.com/sahil__chahal__/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -102,6 +115,8 @@ function CoreTeam() {
           title="Himanshu Pawar"
           description="TE Member"
           large={false}
+          instagram="https://www.instagram.com/himanshi_pwr/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -119,6 +134,8 @@ function CoreTeam() {
           title="Basant Kumar"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/basant6663/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -134,11 +151,13 @@ function CoreTeam() {
           title="Mayank Upadhyay"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/oscar_mike.23/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/jtsec/MAYANK.jpg"
+                src="/team/core/jtsec/mayank.jpg"
                 width={200}
                 height={200}
               />
@@ -149,6 +168,8 @@ function CoreTeam() {
           title="Allam Raju"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/_kamakshi.dixit_/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -164,6 +185,8 @@ function CoreTeam() {
           title="Madhur Mohit"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/madhur_sharma_1/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -179,6 +202,8 @@ function CoreTeam() {
           title="Mohit"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/mohit.singh_19/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -194,6 +219,8 @@ function CoreTeam() {
           title="Vikas Saran"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/drunken_jerry_/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -209,6 +236,8 @@ function CoreTeam() {
           title="Nisha Yadav"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/nishayadav6296/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -224,6 +253,8 @@ function CoreTeam() {
           title="Vandana Kandpal"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/vand_ana_7/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -239,6 +270,8 @@ function CoreTeam() {
           title="Aanchal Kumari"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/anchalkumari827/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -254,6 +287,8 @@ function CoreTeam() {
           title="Akansha Dhami"
           description="Jt Secretary"
           large={false}
+          instagram="https://www.instagram.com/akanshadhami/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -270,6 +305,8 @@ function CoreTeam() {
           title="GV SAI Sisindra"
           description="SE Member"
           large={false}
+          instagram="https://www.instagram.com/sai_sisindra28/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -285,6 +322,8 @@ function CoreTeam() {
           title="Jyoti Kumari"
           description="SE Member"
           large={false}
+          instagram="https://www.instagram.com/_kamakshi.dixit_/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -301,6 +340,8 @@ function CoreTeam() {
           title="Ayush Bhadouria"
           description="SE Member"
           large={false}
+          instagram="https://www.instagram.com/bhadoria_ayush21/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -316,6 +357,8 @@ function CoreTeam() {
           title="Likhith Reddy"
           description="SE Member"
           large={false}
+          instagram="https://www.instagram.com/likith_kumar__20/"
+          // linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
