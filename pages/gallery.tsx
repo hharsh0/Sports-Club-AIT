@@ -35,14 +35,14 @@ function Gallary() {
             <ImageCard src="/gallery/photo5.png" />
             <ImageCard src="/gallery/photo6.png" />
             <ImageCard src="/gallery/photo7.png" />
-            <ImageCard src="/gallery/photo8.jpeg" />
-            <ImageCard src="/gallery/photo9.jpeg" />
-            <ImageCard src="/gallery/photo10.jpeg" />
-            <ImageCard src="/gallery/photo11.jpeg" />
-            <ImageCard src="/gallery/photo12.jpeg" />
-            <ImageCard src="/gallery/photo13.jpeg" />
-            <ImageCard src="/gallery/photo14.jpeg" />
-            <ImageCard src="/gallery/photo15.jpeg" />
+            <ImageCard src="/gallery/photo8.jpg" />
+            <ImageCard src="/gallery/photo9.jpg" />
+            <ImageCard src="/gallery/photo10.jpg" />
+            <ImageCard src="/gallery/photo11.jpg" />
+            <ImageCard src="/gallery/photo12.png" />
+            <ImageCard src="/gallery/photo13.png" />
+            <ImageCard src="/gallery/photo14.png" />
+            <ImageCard src="/gallery/photo15.png" />
 
           </div>
         </div>
