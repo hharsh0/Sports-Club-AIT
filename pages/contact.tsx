@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image';
+import ContactForm from '@/components/ContactForm';
 
 
 
@@ -42,8 +43,7 @@ function Contact() {
   return (
     <>
       <div className="relative my-4 flex w-screen flex-col items-center">
-        <div className="flex w-full max-w-screen-xl flex-col items-center justify-between px-5 md:flex-row lg:flex-row">
-          {/* Text */}
+        {/* <div className="flex w-full max-w-screen-xl flex-col items-center justify-between px-5 md:flex-row lg:flex-row">
           <div className="w-full text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
             <div className="text-5xl font-medium">Get In Touch</div>
             <div className="my-10 text-lg text-gray-600">
@@ -51,7 +51,6 @@ function Contact() {
               If you have any query feel free to mail us anytime.
             </div>
           </div>
-          {/* Image */}
           <div className="animate-[slide-down-fade_0.9s_ease-in-out]">
             <Image
               className=""
@@ -124,6 +123,95 @@ function Contact() {
               </button>
             </div>
           </form>
+        </div> */}
+        <div className="center  text-center">
+          <div
+            slot="title"
+            className="text-4xl font-bold lg:text-5xl lg:tracking-tight"
+          >
+            Contact
+          </div>
+          <div slot="desc" className="mt-4 text-lg text-slate-600">
+            We are a here to help.
+          </div>
+        </div>
+        <div className="mx-auto mt-16 grid max-w-4xl gap-10 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-medium text-gray-800">Contact</h2>
+            <p className="mt-3 text-lg leading-relaxed text-slate-500">
+              Have something to say? We are here to help. Fill up the form or
+              send email or call phone.
+            </p>
+            <div className="mt-5">
+              <div className="mt-2 flex items-center space-x-2 text-gray-600">
+                {/* <Icon className="h-4 w-4 text-gray-400" name="uil:map-marker" /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-4 w-4 text-gray-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+
+                <span>1734 Sanfransico, CA 93063</span>
+              </div>
+              <div className="mt-2 flex items-center space-x-2 text-gray-600">
+                {/* <Icon className="h-4 w-4 text-gray-400" name="uil:envelope" /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-4 w-4 text-gray-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <a href="mailto:hello@astroshipstarter.com">
+                  hello@astroshipstarter.com
+                </a>
+              </div>
+              <div className="mt-2 flex items-center space-x-2 text-gray-600">
+                {/* <Icon className="h-4 w-4 text-gray-400" name="uil:phone" /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-4 w-4 text-gray-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <a href="tel:+91 7355263246">+91 7355263246</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </>
