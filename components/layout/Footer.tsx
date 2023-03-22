@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer aria-label="Site Footer" className="bg-white">
         <div className="mx-auto max-w-screen-xl space-y-8 px-4  sm:px-6 lg:space-y-16 lg:px-8">
-          {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <p className="font-medium text-gray-900">Services</p>
               <nav aria-label="Footer Navigation - Services" className="mt-6">
@@ -101,15 +101,7 @@ function Footer() {
                       href="#"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      FAQs
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-gray-700 transition hover:opacity-75"
-                    >
-                      Live Chat
+                      Pace FAQs
                     </a>
                   </li>
                 </ul>
@@ -154,7 +146,7 @@ function Footer() {
                 </ul>
               </nav>
             </div>
-          </div> */}
+          </div>
           <div className="pt-8 sm:flex sm:items-center sm:justify-between">
             <Image
               src="/logo.png"

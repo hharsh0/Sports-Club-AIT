@@ -107,7 +107,7 @@ function Contact() {
                 Message
               </label>
               <textarea
-                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 focus:outline-none"
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 focus:outline-none h-40"
                 id="message"
                 name="message"
                 placeholder="Your message"

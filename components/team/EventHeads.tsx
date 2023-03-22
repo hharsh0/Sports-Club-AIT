@@ -4,18 +4,18 @@ import Image from 'next/image';
 
 function EventHeads() {
   return (
-    <>
+    <div className="flex w-full max-w-screen-xl flex-col items-center justify-center">
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Cricket</p>
       <div className="mt-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Avinash kumar"
+          description="Cricket Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/cricket/"
                 width={200}
                 height={200}
               />
@@ -23,14 +23,14 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Amita"
+          description="Cricket Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/cricket/amita.jpeg"
                 width={200}
                 height={200}
               />
@@ -42,8 +42,8 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Football</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Gajendra singh"
+          description="Football Secretary"
           large={false}
           demo={
             <>
@@ -57,8 +57,8 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Saloni"
+          description="Football Secretary"
           large={false}
           demo={
             <>
@@ -76,8 +76,8 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Table Tennis</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Ujjwal singh"
+          description="Table Tennis Secretary"
           large={false}
           demo={
             <>
@@ -91,8 +91,8 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Muskan"
+          description="Table Tennis Secretary"
           large={false}
           demo={
             <>
@@ -110,14 +110,14 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Chess</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Abhinav kumar"
+          description="Chess Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/chess/abhinav.jpeg"
                 width={200}
                 height={200}
               />
@@ -125,8 +125,8 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Megha"
+          description="Chess Secretary"
           large={false}
           demo={
             <>
@@ -144,8 +144,8 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Lawn Tennis</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Eshaan kapoor"
+          description="Lawn Tennis Secretary"
           large={false}
           demo={
             <>
@@ -159,8 +159,8 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Khushi"
+          description="Lawn Tennis Secretary"
           large={false}
           demo={
             <>
@@ -175,17 +175,17 @@ function EventHeads() {
         />
       </div>
 
-      <p className="mt-10 w-full max-w-screen-xl text-2xl">Kabaddi</p>
+      <p className="mt-10 w-full max-w-screen-xl text-2xl">Volleyball</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Sachin bhambu"
+          description="Volleyball Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/volleyball/sachin.jpeg"
                 width={200}
                 height={200}
               />
@@ -193,14 +193,14 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Neha choudhary"
+          description="Volleyball Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/volleyball/neha.jpeg"
                 width={200}
                 height={200}
               />
@@ -212,14 +212,14 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Basketball</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Vikrant kumar"
+          description="Basketball Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/basketball/vikrant.jpeg"
                 width={200}
                 height={200}
               />
@@ -227,14 +227,14 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Nisha"
+          description="Basketball Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/basketball/nisha2.jpeg"
                 width={200}
                 height={200}
               />
@@ -246,8 +246,8 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Badminton</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Karri akash"
+          description="Badminton Secretary"
           large={false}
           demo={
             <>
@@ -261,14 +261,14 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Kamakshi dixit"
+          description="Badminton Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/badminton/kamakshi.jpeg"
                 width={200}
                 height={200}
               />
@@ -277,7 +277,7 @@ function EventHeads() {
         />
       </div>
 
-      <p className="mt-10 w-full max-w-screen-xl text-2xl">Kho Kho</p>
+      {/* <p className="mt-10 w-full max-w-screen-xl text-2xl">Kho Kho</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
           title="Arajeet Pandey"
@@ -309,18 +309,18 @@ function EventHeads() {
             </>
           }
         />
-      </div>
+      </div> */}
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Squash</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Uttkarsh singh"
+          description="Squash Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/squash/utkarsh.jpeg"
                 width={200}
                 height={200}
               />
@@ -328,14 +328,14 @@ function EventHeads() {
           }
         />
         <TeamCard
-          title="Arajeet Pandey"
-          description="Sports Secretary"
+          title="Amruta patil"
+          description="Squash Secretary"
           large={false}
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/squash/amruta.jpeg"
                 width={200}
                 height={200}
               />
@@ -343,7 +343,7 @@ function EventHeads() {
           }
         />
       </div>
-    </>
+    </div>
   );
 }
 

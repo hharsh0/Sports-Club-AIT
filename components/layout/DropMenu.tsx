@@ -9,7 +9,6 @@ import {
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
 import { Fragment, useState } from "react";
-import classNames from "classnames";
 import Link from "next/link";
 
 function DropMenu() {
@@ -93,7 +92,7 @@ function DropMenu() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link href="/">
+                <Link href="/pace/events">
                   <div className="block bg-white px-4 py-2 text-sm text-zinc-700">
                     <div className="flex flex-row">
                       <Pencil1Icon className="mr-4 mt-0.5" /> Pace Registration

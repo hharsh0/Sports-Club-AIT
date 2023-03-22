@@ -55,7 +55,6 @@ export default function TeamCard({
             </ReactMarkdown>
             <div className="flex items-center w-full shrink-0 justify-between py-4">
               <InstagramLogoIcon className="h-6 w-6" />
-              <GitHubLogoIcon className="h-6 w-6" />
               <LinkedInLogoIcon className="h-6 w-6" />
             </div>
           </div>
