@@ -1,6 +1,6 @@
-import React from 'react'
-import TeamCard from '../TeamCard';
-import Image from 'next/image';
+import React from "react";
+import TeamCard from "../TeamCard";
+import Image from "next/image";
 
 function EventHeads() {
   return (
@@ -15,7 +15,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/eventHead/cricket/"
+                src="/team/eventHead/cricket/avinash.jpeg"
                 width={200}
                 height={200}
               />
@@ -49,7 +49,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/football/gajender.jpg"
                 width={200}
                 height={200}
               />
@@ -64,7 +64,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/football/SALONI.jpeg"
                 width={200}
                 height={200}
               />
@@ -83,7 +83,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/Tabletennis/ujwal.jpg"
                 width={200}
                 height={200}
               />
@@ -98,7 +98,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/Tabletennis/muskan.jpg"
                 width={200}
                 height={200}
               />
@@ -151,7 +151,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/Lawntennis/ESHAAN.jpg"
                 width={200}
                 height={200}
               />
@@ -166,7 +166,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/Lawntennis/KHUSHI.jpg"
                 width={200}
                 height={200}
               />
@@ -347,4 +347,4 @@ function EventHeads() {
   );
 }
 
-export default EventHeads
+export default EventHeads;
