@@ -15,7 +15,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/eventHead/cricket/"
+                src="/team/eventHead/cricket/avinash.jpeg"
                 width={200}
                 height={200}
               />
@@ -49,7 +49,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/core/football/gajju.jpg"
                 width={200}
                 height={200}
               />
@@ -64,7 +64,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/core/football/saloni.jpg"
                 width={200}
                 height={200}
               />
@@ -83,7 +83,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/core/table tennis/ujjwal.jpg"
                 width={200}
                 height={200}
               />
@@ -166,7 +166,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/core/khushi.jpg"
                 width={200}
                 height={200}
               />
@@ -200,7 +200,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/eventHead/volleyball/neha.jpeg"
+                src="/team/eventHead/volleyball/neha.jpg"
                 width={200}
                 height={200}
               />
@@ -253,7 +253,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/core/akash.jpeg"
                 width={200}
                 height={200}
               />
@@ -268,7 +268,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/eventHead/badminton/kamakshi.jpeg"
+                src="/team/eventHead/badminton/kamakshi.heic"
                 width={200}
                 height={200}
               />
