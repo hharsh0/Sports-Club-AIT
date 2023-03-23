@@ -120,7 +120,7 @@ const features = [
         />
       </div>
     ),
-    link: "/pace",
+    link: "/pace/events",
   },
   {
     title: "Contact Us",
