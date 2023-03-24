@@ -159,21 +159,6 @@ function TeamEvents() {
           link="register/tabletennis-team"
         />
         <EventsCard
-          title="Kho-kho"
-          description="This is the discription of event"
-          demo={
-            <>
-              <Image
-                alt="pace-registration"
-                src="/pace/pace-cricket.png"
-                width={300}
-                height={300}
-              />
-            </>
-          }
-          link="register/kho-kho"
-        />
-        <EventsCard
           title="Marathon (Mix)"
           description="This is the discription of event"
           demo={
