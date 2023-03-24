@@ -14,7 +14,12 @@ function Events() {
           <div className="w-full text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
             <div className="text-5xl font-medium">Pace events</div>
             <div className="my-10 text-lg text-gray-600">
-              List of all events that is going to be held in PACE 2023.
+              The annual sports fest of AIT PUNE is one of the largest of its
+              kind in pune and an energy packed event. PACE has grown leaps and
+              bounds over the years and has consistenly attracted participants
+              from all over india. It has been living upto the expectations of
+              thousands of participants who come here looking forward to best
+              events of their kind.
             </div>
           </div>
           {/* Image */}
@@ -47,9 +52,16 @@ function Events() {
                 </div>
               </div>
             </li>
-            <li onClick={() => setIsTeamEvent(false)} className="cursor-pointer">
+            <li
+              onClick={() => setIsTeamEvent(false)}
+              className="cursor-pointer"
+            >
               <div className="relative block p-4">
-                <span className={`${!isTeamEvent && 'bg-pink-600'} absolute inset-x-0 -bottom-px h-px w-full`} />
+                <span
+                  className={`${
+                    !isTeamEvent && "bg-pink-600"
+                  } absolute inset-x-0 -bottom-px h-px w-full`}
+                />
                 <div className="flex items-center justify-center gap-4">
                   <Image
                     src="/individual.png"
