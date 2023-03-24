@@ -2,10 +2,14 @@ import React,{useState} from 'react'
 import Image from 'next/image';
 import TeamEvents from '@/components/pace/TeamEvents';
 import IndividualEvents from '@/components/pace/IndividualEvents';
+import { useRouter } from "next/router";
+
 
 
 function Events() {
   const [isTeamEvent, setIsTeamEvent] = useState(true)
+    const router = useRouter();
+
   return (
     <>
       <div className="relative my-4 flex w-screen flex-col items-center">
@@ -21,6 +25,32 @@ function Events() {
               thousands of participants who come here looking forward to best
               events of their kind.
             </div>
+            <button
+              onClick={() =>
+                router.push(
+                  "https://drive.google.com/file/d/1U51Hp_o-CiurU8eV0Gm9FKrfIXem4t6W/view?usp=sharing",
+                )
+              }
+              className="flex max-w-fit cursor-pointer items-center justify-between space-x-4 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </div>
+              Download brochure
+            </button>
           </div>
           {/* Image */}
           <div className="animate-[slide-down-fade_0.9s_ease-in-out]">
