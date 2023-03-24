@@ -24,7 +24,6 @@ export default function Home() {
           },
         }}
       >
-        
         <motion.a
           variants={FADE_DOWN_ANIMATION_VARIANTS}
           href=""
@@ -48,10 +47,14 @@ export default function Home() {
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
           <Balancer>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            The AIT Sports Club offers a variety of sports, including cricket,
+            football, basketball, volleyball, badminton, table tennis and etc.
+            The club is open to all students of AIT and encourages them to
+            participate in various sporting events and competitions at the
+            inter-college and national levels and overall, the AIT Sports Club
+            provides a great platform for students to showcase their sporting
+            talents and also helps in the overall development of their
+            personality.
           </Balancer>
         </motion.p>
         <motion.div
