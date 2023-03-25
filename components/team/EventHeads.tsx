@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function EventHeads() {
   return (
-    <div className="flex w-full max-w-screen-xl flex-col items-center justify-center">
+    <div className="flex w-full max-w-screen-xl flex-col items-center justify-center lg:text-start text-center">
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Cricket</p>
       <div className="mt-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
