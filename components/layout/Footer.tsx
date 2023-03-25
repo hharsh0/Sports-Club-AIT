@@ -14,7 +14,7 @@ function Footer() {
                 href="https://www.facebook.com/groups/793403114032949/"
                 className="text-gray-500"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <svg
                   fill="currentColor"
@@ -28,7 +28,7 @@ function Footer() {
                 </svg>
               </a>
               {/* <a className="ml-3 text-gray-500" target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -44,7 +44,7 @@ function Footer() {
                 href="https://www.instagram.com/aitsportsclub/"
                 className="ml-3 text-gray-500"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 <svg
                   fill="none"
@@ -60,7 +60,7 @@ function Footer() {
                 </svg>
               </a>
               {/* <a className="ml-3 text-gray-500" target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
