@@ -42,6 +42,10 @@ export default function Meta({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta
+        name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+      />
     </Head>
   );
 }

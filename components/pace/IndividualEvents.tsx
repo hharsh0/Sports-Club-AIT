@@ -10,7 +10,7 @@ function IndividualEvents() {
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <EventsCard
           title="Squash (individual)"
-          description="This is the discription of event"
+          description="Open for Boys and Girls."
           demo={
             <>
               <Image
@@ -25,7 +25,7 @@ function IndividualEvents() {
         />
         <EventsCard
           title="Badminton (individual)"
-          description="This is the discription of event"
+          description="Open for Boys and Girls."
           demo={
             <>
               <Image
@@ -40,7 +40,7 @@ function IndividualEvents() {
         />
         <EventsCard
           title="Table Tennis (individual)"
-          description="This is the discription of event"
+          description="Open for Boys and Girls."
           demo={
             <>
               <Image
@@ -55,7 +55,8 @@ function IndividualEvents() {
         />
         <EventsCard
           title="Chess"
-          description="This is the discription of event"
+          description="It is Open FIDE rapid chess
+          tournament only for Girls."
           demo={
             <>
               <Image
