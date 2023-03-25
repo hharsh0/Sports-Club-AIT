@@ -165,7 +165,7 @@ function Contact() {
                   />
                 </svg>
 
-                <span>1734 Sanfransico, CA 93063</span>
+                <span>Army Institute Of Technology , Dighi Hills.</span>
               </div>
               <div className="mt-2 flex items-center space-x-2 text-gray-600">
                 {/* <Icon className="h-4 w-4 text-gray-400" name="uil:envelope" /> */}
@@ -184,8 +184,8 @@ function Contact() {
                   />
                 </svg>
 
-                <a href="mailto:hello@astroshipstarter.com">
-                  hello@astroshipstarter.com
+                <a href="mailto:sportsclub@aitpune.edu.in">
+                  sportsclub@aitpune.edu.in
                 </a>
               </div>
               <div className="mt-2 flex items-center space-x-2 text-gray-600">
@@ -205,7 +205,7 @@ function Contact() {
                   />
                 </svg>
 
-                <a href="tel:+91 7355263246">+91 7355263246</a>
+                <a href="tel:+91 7355263246">+91 8571943594</a>
               </div>
             </div>
           </div>
