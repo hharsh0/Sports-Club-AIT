@@ -11,7 +11,7 @@ function CoreTeam() {
           description="Sports Secretary"
           large={false}
           instagram="https://www.instagram.com/arajeet_arj/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/arajeet-pandey-06b460201/"
           
           demo={
             <>
@@ -29,7 +29,7 @@ function CoreTeam() {
           description="Sports Secretary"
           large={false}
           instagram="https://www.instagram.com/hema_sree_dasari/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/hema-sree-dasari-734466230/"
           demo={
             <>
               <Image
@@ -47,7 +47,7 @@ function CoreTeam() {
           description="TE Member"
           large={false}
           instagram="https://www.instagram.com/0807raju"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/p-raju-a601ba1a8/"
           demo={
             <>
               <Image
@@ -65,7 +65,7 @@ function CoreTeam() {
           description="TE Member"
           large={false}
           instagram="https://www.instagram.com/_while._.shiv_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/shivraj-singh05/"
           demo={
             <>
               <Image
@@ -82,7 +82,7 @@ function CoreTeam() {
           description="TE Member"
           large={false}
           instagram="https://www.instagram.com/_fahadfaiz/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/fahad-faizan-93b2081ba/"
           demo={
             <>
               <Image
@@ -99,7 +99,7 @@ function CoreTeam() {
           description="TE Member"
           large={false}
           instagram="https://www.instagram.com/sahil__chahal__/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/sahil-chahal-a252a1202/"
           demo={
             <>
               <Image
@@ -116,7 +116,7 @@ function CoreTeam() {
           description="TE Member"
           large={false}
           instagram="https://www.instagram.com/himanshi_pwr/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/himanshu-pawar7/"
           demo={
             <>
               <Image
@@ -135,7 +135,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/basant6663/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/basant-kumar-415a81176/"
           demo={
             <>
               <Image
@@ -152,7 +152,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/oscar_mike.23/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/mayank-upadhyay-663a64127/"
           demo={
             <>
               <Image
@@ -165,11 +165,11 @@ function CoreTeam() {
           }
         />
          <TeamCard
-          title="Allam Raju"
+          title="Arun Kumar"
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/_kamakshi.dixit_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/arunkumar-allamraj-981480228/"
           demo={
             <>
               <Image
@@ -186,7 +186,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/madhur_sharma_1/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/madhur-sharma-509b0a227/"
           demo={
             <>
               <Image
@@ -203,7 +203,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/mohit.singh_19/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/mohit-singh-396a40222/"
           demo={
             <>
               <Image
@@ -220,7 +220,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/drunken_jerry_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/vikas-saran-09b484237/"
           demo={
             <>
               <Image
@@ -237,7 +237,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/nishayadav6296/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/nisha-yadav-380314226/"
           demo={
             <>
               <Image
@@ -254,7 +254,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/vand_ana_7/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/vandana-k-3b64a6225/"
           demo={
             <>
               <Image
@@ -271,7 +271,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/anchalkumari827/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/anchal-kumari-4738b4224/"
           demo={
             <>
               <Image
@@ -288,7 +288,7 @@ function CoreTeam() {
           description="Jt Secretary"
           large={false}
           instagram="https://www.instagram.com/akanshadhami/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/akansha-dhami-161558225/"
           demo={
             <>
               <Image
@@ -306,7 +306,7 @@ function CoreTeam() {
           description="SE Member"
           large={false}
           instagram="https://www.instagram.com/sai_sisindra28/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/g-v-sai-sisindra-reddy-85831a224/"
           demo={
             <>
               <Image
@@ -323,7 +323,7 @@ function CoreTeam() {
           description="SE Member"
           large={false}
           instagram="https://www.instagram.com/_kamakshi.dixit_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/jyoti-yadav-028270229/"
           demo={
             <>
               <Image
@@ -341,7 +341,7 @@ function CoreTeam() {
           description="SE Member"
           large={false}
           instagram="https://www.instagram.com/bhadoria_ayush21/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/ayush-bhadoria-985555217/"
           demo={
             <>
               <Image
@@ -358,7 +358,7 @@ function CoreTeam() {
           description="SE Member"
           large={false}
           instagram="https://www.instagram.com/likith_kumar__20/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/likhithreddy09/"
           demo={
             <>
               <Image
@@ -370,21 +370,23 @@ function CoreTeam() {
             </>
           }
         />
-        {/* <TeamCard
+        <TeamCard
           title="Himanshu Rai"
           description="SE Member"
           large={false}
+          instagram="https://www.instagram.com/himanshurai529//"
+          linkedin="https://www.linkedin.com/in/himanshu-rai-69ba1622b/"
           demo={
             <>
               <Image
                 alt="contact"
-                src="/team/core/jtsec/p"
+                src="/team/core/jtsec/himanshu.png"
                 width={200}
                 height={200}
               />
             </>
           }
-        /> */}
+        />
       </div>
     </>
   );

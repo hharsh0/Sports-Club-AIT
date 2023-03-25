@@ -12,7 +12,7 @@ function EventHeads() {
           description="Cricket Secretary"
           large={false}
           instagram="https://www.instagram.com/_avi_kr/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/avinash-kumar-b5b51221a/"
           demo={
             <>
               <Image
@@ -29,7 +29,7 @@ function EventHeads() {
           description="Cricket Secretary"
           large={false}
           instagram="https://www.instagram.com/__amita.s_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/amita-singh-386917212/"
           demo={
             <>
               <Image
@@ -88,7 +88,7 @@ function EventHeads() {
           description="Table Tennis Secretary"
           large={false}
           instagram="https://www.instagram.com/_ujjwal.17__/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/ujjwal-singh-51441b221/"
           demo={
             <>
               <Image
@@ -105,7 +105,7 @@ function EventHeads() {
           description="Table Tennis Secretary"
           large={false}
           instagram="https://www.instagram.com/izme.kai/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/muskan-3bb381200/"
           demo={
             <>
               <Image
@@ -126,7 +126,7 @@ function EventHeads() {
           description="Chess Secretary"
           large={false}
           instagram="https://www.instagram.com/@abhinavbajad/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/abhinav-bajad-932397237/"
           demo={
             <>
               <Image
@@ -143,7 +143,7 @@ function EventHeads() {
           description="Chess Secretary"
           large={false}
           instagram="https://www.instagram.com/_megha.k._/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/megha-kumari-b6395b212/"
           demo={
             <>
               <Image
@@ -164,7 +164,7 @@ function EventHeads() {
           description="Lawn Tennis Secretary"
           large={false}
           instagram="https://www.instagram.com/eshaankpr/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/eshaankapoor/"
           demo={
             <>
               <Image
@@ -202,7 +202,7 @@ function EventHeads() {
           description="Volleyball Secretary"
           large={false}
           instagram="https://www.instagram.com/sachinbhambhu_it.is/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/sachin-bhambhu-61772a208/"
           demo={
             <>
               <Image
@@ -240,7 +240,7 @@ function EventHeads() {
           description="Basketball Secretary"
           large={false}
           instagram="https://www.instagram.com/_iso_v/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/vikrant-kumar-4027501ba/"
           demo={
             <>
               <Image
@@ -257,7 +257,7 @@ function EventHeads() {
           description="Basketball Secretary"
           large={false}
           instagram="https://www.instagram.com/14840_nisha/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/nisha-dathak-70b458218/"
           demo={
             <>
               <Image
@@ -295,7 +295,7 @@ function EventHeads() {
           description="Badminton Secretary"
           large={false}
           instagram="https://www.instagram.com/_kamakshi.dixit_/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/kamakshi-dixit-101a21200/"
           demo={
             <>
               <Image
@@ -349,7 +349,7 @@ function EventHeads() {
           description="Squash Secretary"
           large={false}
           instagram="https://www.instagram.com/uttkarsh.singh007/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/uttkarsh-singh-97a272164/"
           demo={
             <>
               <Image
@@ -366,7 +366,7 @@ function EventHeads() {
           description="Squash Secretary"
           large={false}
           instagram="https://www.instagram.com/amruta_patil_1111/"
-          // linkedin="https://www.linkedin.com/in/izmekai/"
+          linkedin="https://www.linkedin.com/in/amruta-patil-074057204/"
           demo={
             <>
               <Image
