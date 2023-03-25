@@ -41,6 +41,23 @@ function CoreTeam() {
             </>
           }
         />
+         <TeamCard
+          title="Rishav Rai"
+          description="Sponsorship Head"
+          large={false}
+          instagram="https://www.instagram.com/_._._.anisotropic._._._/"
+          linkedin="https://www.linkedin.com/in/anisotropic/"
+          demo={
+            <>
+              <Image
+                alt="contact"
+                src="/team/core/temembers/rishav.jpeg"
+                width={200}
+                height={200}
+              />
+            </>
+          }
+        />
         <br />
         <TeamCard
           title="P Raju"
