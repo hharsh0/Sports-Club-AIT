@@ -15,7 +15,7 @@ function Events() {
       <div className="relative my-4 flex w-screen flex-col items-center">
         <div className="flex w-full max-w-screen-xl flex-col items-center justify-between px-5 md:flex-row lg:flex-row">
           {/* Text */}
-          <div className="w-full text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
+          <div className="w-full flex flex-col justify-center items-center lg:items-start text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
             <div className="text-5xl font-medium">Pace events</div>
             <div className="my-10 text-lg text-gray-600">
               The annual sports fest of AIT PUNE is one of the largest of its
