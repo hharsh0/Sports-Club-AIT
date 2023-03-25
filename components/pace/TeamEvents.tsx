@@ -158,21 +158,6 @@ function TeamEvents() {
           }
           link="register/tabletennis-team"
         />
-        <EventsCard
-          title="Marathon (Mix)"
-          description="This is the discription of event"
-          demo={
-            <>
-              <Image
-                alt="pace-registration"
-                src="/pace/pace-marathon.png"
-                width={300}
-                height={300}
-              />
-            </>
-          }
-          link="register/marathon-mix"
-        />
       </div>
     </>
   );
