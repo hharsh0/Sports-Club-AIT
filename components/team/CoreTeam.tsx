@@ -54,7 +54,7 @@ function CoreTeam() {
         />
 
         <TeamCard
-          title="Shiv raj"
+          title="Shivraj"
           description="TE Member"
           large={false}
           demo={

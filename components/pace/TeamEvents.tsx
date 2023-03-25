@@ -8,7 +8,10 @@ function TeamEvents() {
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <EventsCard
           title="Cricket"
-          description="This is the discription of event"
+          description="
+          -This is the discription of event
+          -This is the discription of event
+          "
           demo={
             <>
               <Image
