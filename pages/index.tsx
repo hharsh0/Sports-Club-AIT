@@ -80,7 +80,7 @@ export default function Home() {
             <p>Pace Registration</p>
           </Link>
           <Link
-            href="pace/events"
+            href="/timeline"
             className="flex max-w-fit cursor-pointer items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
           >
             <Image src="/events1.png" height={25} width={25} alt="events" />

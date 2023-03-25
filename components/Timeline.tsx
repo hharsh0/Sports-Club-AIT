@@ -6,7 +6,7 @@ function Timeline() {
     <>
       <section className="body-font relative text-gray-600">
         <div className="container mx-auto flex flex-wrap px-5 py-24">
-          <div className='text-center font-medium text-4xl w-full my-8 text-gray-800'>
+          <div className='text-center font-medium text-4xl w-full mb-8 text-gray-800'>
             <h1>Timeline for Pace 2023</h1>
           </div>
           <div className="flex w-full flex-wrap">
