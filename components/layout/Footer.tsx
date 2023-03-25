@@ -10,7 +10,12 @@ function Footer() {
               © 2023 Army institute of technology
             </p>
             <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
-              <a className="text-gray-500">
+              <a
+                href="https://www.facebook.com/groups/793403114032949/"
+                className="text-gray-500"
+                target="_blank"
+                rel="noopener"
+              >
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -22,7 +27,7 @@ function Footer() {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              {/* <a className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -33,8 +38,13 @@ function Footer() {
                 >
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                 </svg>
-              </a>
-              <a className="ml-3 text-gray-500">
+              </a> */}
+              <a
+                href="https://www.instagram.com/aitsportsclub/"
+                className="ml-3 text-gray-500"
+                target="_blank"
+                rel="noopener"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -48,7 +58,7 @@ function Footer() {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              {/* <a className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
@@ -64,7 +74,7 @@ function Footer() {
                   />
                   <circle cx={4} cy={4} r={2} stroke="none" />
                 </svg>
-              </a>
+              </a> */}
             </span>
           </div>
         </div>
