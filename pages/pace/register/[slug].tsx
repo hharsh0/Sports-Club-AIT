@@ -356,8 +356,7 @@ function Register() {
                   onClick={handleClick}
                   className="notched inline-block shrink-0 bg-black px-12 py-3 text-sm font-medium text-white transition duration-500 hover:scale-110 focus:outline-none dark:bg-[#2CF0FE] dark:text-black"
                 >
-                  {count != 3 && "Next"}
-                  {count == 3 && "Submit"}
+                  Submit
                 </button>
               </div>
             </form>
