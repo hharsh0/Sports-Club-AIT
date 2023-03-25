@@ -47,14 +47,12 @@ export default function Home() {
           variants={FADE_DOWN_ANIMATION_VARIANTS}
         >
           <Balancer>
-            The AIT Sports Club offers a variety of sports, including cricket,
-            football, basketball, volleyball, badminton, table tennis and etc.
-            The club is open to all students of AIT and encourages them to
-            participate in various sporting events and competitions at the
-            inter-college and national levels and overall, the AIT Sports Club
-            provides a great platform for students to showcase their sporting
-            talents and also helps in the overall development of their
-            personality.
+            Join the Sports Club of AIT and discover your passion for sports!
+            From basketball to tennis, we offer a range of opportunities for
+            students to stay active and connect with like-minded individuals.
+            Whether you are a seasoned athlete or just looking to have some fun,
+            our club is the perfect place for you. Come be a part of our
+            community that promotes fitness, teamwork, and sportsmanship!
           </Balancer>
         </motion.p>
         <motion.div
