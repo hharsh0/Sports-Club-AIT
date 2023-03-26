@@ -12,6 +12,7 @@ function Register() {
   const [selectedOptionYear, setSelectedOptionYear] = useState("");
   const [selectedOptionGame, setSelectedOptionGame] = useState("");
   const [footballFormate, setFootballFormate] = useState("")
+  const [gender, setGender] = useState("")
 
   const handleOptionChange = (event: any) => {
     setSelectedOptionYear(event.target.value);
@@ -25,15 +26,19 @@ function Register() {
     setFootballFormate(event.target.value)
   }
 
+  const handleGender = (event: any) => {
+    setGender(event.target.value)
+  }
+
   
 
-  const handleClick = () => {
-    if (count > 3) {
-      return;
-    } else if (count < 3) {
-      setCount(count + 1);
-    }
-  };
+  // const handleClick = () => {
+  //   if (count > 3) {
+  //     return;
+  //   } else if (count < 3) {
+  //     setCount(count + 1);
+  //   }
+  // };
 
   const handleClickPrev = () => {
     if (count < 1) {
@@ -62,7 +67,8 @@ function Register() {
 
     const yearOfStudy = selectedOptionYear;
     const isTeamEvent = selectedOptionGame;
-    const footballType = footballFormate
+    const footballType = footballFormate;
+    const playerGender = gender;
     // @ts-ignore: Object is possibly 'null'.
     const teamMembersDetails = teamMembers.map((teamMember, index) => ({
       // @ts-ignore: Object is possibly 'null'.
@@ -80,13 +86,17 @@ function Register() {
       yearOfStudy,
       isTeamEvent,
       teamMembersDetails,
-      footballType
+      footballType,
+      playerGender
     };
 
     console.log(body);
 
     try {
       projectFirestore.collection('teams').add(body)
+      if (count < 3) {
+        setCount(count + 1);
+      }
     }
     catch (err) {
       alert(err)
@@ -293,43 +303,82 @@ function Register() {
                   </div>
                 </>
               </div>
-              {slug === "football" && <div className="col-span-6 sm:col-span-3">
-                Which Football formate do you want to participate?
+              {slug === "football" && (
+                <div className="col-span-6 sm:col-span-3">
+                  Which Football formate do you want to participate?
+                  <>
+                    <div className="my-4 flex items-center">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        value="6-per-side"
+                        checked={footballFormate === "6-per-side"}
+                        onChange={handleFootballFormate}
+                        className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      />
+                      <label
+                        htmlFor="default-checkbox"
+                        className="ml-2 text-sm font-medium text-gray-900"
+                      >
+                        6-per-side
+                      </label>
+                    </div>
+                    <div className="mb-4 flex items-center">
+                      <input
+                        id="checked-checkbox"
+                        type="checkbox"
+                        value="11-per-side"
+                        checked={footballFormate === "11-per-side"}
+                        onChange={handleFootballFormate}
+                        className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      />
+                      <label
+                        htmlFor="checked-checkbox"
+                        className="ml-2 text-sm font-medium text-gray-900"
+                      >
+                        11-per-side
+                      </label>
+                    </div>
+                  </>
+                </div>
+              )}
+              <div className="col-span-6 sm:col-span-3">
+                Gender (If Team event all members need to be of the gender choosen below!)
                 <>
                   <div className="my-4 flex items-center">
                     <input
                       id="default-checkbox"
                       type="checkbox"
-                      value="6-per-side"
-                      checked={footballFormate === "6-per-side"}
-                      onChange={handleFootballFormate}
+                      value="male"
+                      checked={gender === "male"}
+                      onChange={handleGender}
                       className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
                     />
                     <label
                       htmlFor="default-checkbox"
                       className="ml-2 text-sm font-medium text-gray-900"
                     >
-                      6-per-side
+                      Male
                     </label>
                   </div>
                   <div className="mb-4 flex items-center">
                     <input
                       id="checked-checkbox"
                       type="checkbox"
-                      value="11-per-side"
-                      checked={footballFormate === "11-per-side"}
-                      onChange={handleFootballFormate}
+                      value="female"
+                      checked={gender === "female"}
+                      onChange={handleGender}
                       className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
                     />
                     <label
                       htmlFor="checked-checkbox"
                       className="ml-2 text-sm font-medium text-gray-900"
                     >
-                      11-per-side
+                      Female (Except kabaddi)
                     </label>
                   </div>
                 </>
-              </div>}
+              </div>
               <div className="col-span-6 mt-4 text-2xl">
                 Team Members Details
               </div>
@@ -390,14 +439,14 @@ function Register() {
               <div className="col-span-6 flex w-full justify-between">
                 <button
                   onClick={handleClickPrev}
-                  className={`${
+                  className={`invisible ${
                     count === 1 && "mr-auto cursor-not-allowed opacity-50"
                   } notched inline-block shrink-0 bg-black px-12 py-3 text-sm font-medium text-white transition duration-500 hover:scale-110 focus:outline-none dark:bg-[#2CF0FE] dark:text-black`}
                 >
                   {count >= 1 && "Prev"}
                 </button>
                 <button
-                  onClick={handleClick}
+                  // onClick={handleClick}
                   className="notched inline-block shrink-0 bg-black px-12 py-3 text-sm font-medium text-white transition duration-500 hover:scale-110 focus:outline-none dark:bg-[#2CF0FE] dark:text-black"
                 >
                   Submit
