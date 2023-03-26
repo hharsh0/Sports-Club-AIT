@@ -11,6 +11,7 @@ function Register() {
   const [teamMembers, setTeamMembers] = useState<any>([]);
   const [selectedOptionYear, setSelectedOptionYear] = useState("");
   const [selectedOptionGame, setSelectedOptionGame] = useState("");
+  const [footballFormate, setFootballFormate] = useState("")
 
   const handleOptionChange = (event: any) => {
     setSelectedOptionYear(event.target.value);
@@ -18,6 +19,10 @@ function Register() {
 
   const handleOptionChangeGame = (event: any) => { 
     setSelectedOptionGame(event.target.value);
+  }
+
+  const handleFootballFormate = (event:any) => {
+    setFootballFormate(event.target.value)
   }
 
   
@@ -57,6 +62,7 @@ function Register() {
 
     const yearOfStudy = selectedOptionYear;
     const isTeamEvent = selectedOptionGame;
+    const footballType = footballFormate
     // @ts-ignore: Object is possibly 'null'.
     const teamMembersDetails = teamMembers.map((teamMember, index) => ({
       // @ts-ignore: Object is possibly 'null'.
@@ -74,6 +80,7 @@ function Register() {
       yearOfStudy,
       isTeamEvent,
       teamMembersDetails,
+      footballType
     };
 
     console.log(body);
@@ -286,6 +293,43 @@ function Register() {
                   </div>
                 </>
               </div>
+              {slug === "football" && <div className="col-span-6 sm:col-span-3">
+                Which Football formate do you want to participate?
+                <>
+                  <div className="my-4 flex items-center">
+                    <input
+                      id="default-checkbox"
+                      type="checkbox"
+                      value="6-per-side"
+                      checked={footballFormate === "6-per-side"}
+                      onChange={handleFootballFormate}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="default-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      6-per-side
+                    </label>
+                  </div>
+                  <div className="mb-4 flex items-center">
+                    <input
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value="11-per-side"
+                      checked={footballFormate === "11-per-side"}
+                      onChange={handleFootballFormate}
+                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-gray-900"
+                    >
+                      11-per-side
+                    </label>
+                  </div>
+                </>
+              </div>}
               <div className="col-span-6 mt-4 text-2xl">
                 Team Members Details
               </div>
