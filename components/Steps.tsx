@@ -41,7 +41,7 @@ function Steps({ count }:prop) {
                   count === 3 ? "bg-blue-600 text-white" : "bg-white text-black"
                 } text-[10px] font-bold leading-6`}
               >
-                3
+                2
               </span>
 
               <span className="hidden sm:ml-2 sm:block text-gray-900"> Payment </span>

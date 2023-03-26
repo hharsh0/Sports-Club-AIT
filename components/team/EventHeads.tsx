@@ -4,13 +4,15 @@ import Image from "next/image";
 
 function EventHeads() {
   return (
-    <div className="flex w-full max-w-screen-xl flex-col items-center justify-center lg:text-start text-center">
+    <div className="flex w-full max-w-screen-xl flex-col items-center justify-center text-center lg:text-start">
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Cricket</p>
       <div className="mt-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
           title="Avinash kumar"
           description="Cricket Secretary"
           large={false}
+          instagram="https://www.instagram.com/_avi_kr/"
+          linkedin="https://www.linkedin.com/in/avinash-kumar-b5b51221a/"
           demo={
             <>
               <Image
@@ -26,6 +28,8 @@ function EventHeads() {
           title="Amita"
           description="Cricket Secretary"
           large={false}
+          instagram="https://www.instagram.com/__amita.s_/"
+          linkedin="https://www.linkedin.com/in/amita-singh-386917212/"
           demo={
             <>
               <Image
@@ -45,6 +49,7 @@ function EventHeads() {
           title="Gajendra singh"
           description="Football Secretary"
           large={false}
+          instagram="https://www.instagram.com/gajender_07/"
           demo={
             <>
               <Image
@@ -60,6 +65,7 @@ function EventHeads() {
           title="Saloni"
           description="Football Secretary"
           large={false}
+          linkedin="https://www.linkedin.com/in/saloni-kumari-2b97541ba/"
           demo={
             <>
               <Image
@@ -79,6 +85,8 @@ function EventHeads() {
           title="Ujjwal singh"
           description="Table Tennis Secretary"
           large={false}
+          instagram="https://www.instagram.com/_ujjwal.17__/"
+          linkedin="https://www.linkedin.com/in/ujjwal-singh-51441b221/"
           demo={
             <>
               <Image
@@ -94,6 +102,8 @@ function EventHeads() {
           title="Muskan"
           description="Table Tennis Secretary"
           large={false}
+          instagram="https://www.instagram.com/izme.kai/"
+          linkedin="https://www.linkedin.com/in/muskan-3bb381200/"
           demo={
             <>
               <Image
@@ -113,6 +123,8 @@ function EventHeads() {
           title="Abhinav kumar"
           description="Chess Secretary"
           large={false}
+          instagram="https://www.instagram.com/@abhinavbajad/"
+          linkedin="https://www.linkedin.com/in/abhinav-bajad-932397237/"
           demo={
             <>
               <Image
@@ -128,6 +140,8 @@ function EventHeads() {
           title="Megha"
           description="Chess Secretary"
           large={false}
+          instagram="https://www.instagram.com/_megha.k._/"
+          linkedin="https://www.linkedin.com/in/megha-kumari-b6395b212/"
           demo={
             <>
               <Image
@@ -147,6 +161,8 @@ function EventHeads() {
           title="Eshaan kapoor"
           description="Lawn Tennis Secretary"
           large={false}
+          instagram="https://www.instagram.com/eshaankpr/"
+          linkedin="https://www.linkedin.com/in/eshaankapoor/"
           demo={
             <>
               <Image
@@ -162,6 +178,8 @@ function EventHeads() {
           title="Khushi"
           description="Lawn Tennis Secretary"
           large={false}
+          instagram="https://www.instagram.com/izme.kai/"
+          linkedin="https://www.linkedin.com/in/izmekai/"
           demo={
             <>
               <Image
@@ -181,6 +199,8 @@ function EventHeads() {
           title="Sachin bhambu"
           description="Volleyball Secretary"
           large={false}
+          instagram="https://www.instagram.com/sachinbhambhu_it.is/"
+          linkedin="https://www.linkedin.com/in/sachin-bhambhu-61772a208/"
           demo={
             <>
               <Image
@@ -196,6 +216,8 @@ function EventHeads() {
           title="Neha choudhary"
           description="Volleyball Secretary"
           large={false}
+          instagram="https://www.instagram.com/the_shining_sun7644"
+          linkedin="https://www.linkedin.com/in/neha-choudhary-068488203"
           demo={
             <>
               <Image
@@ -215,6 +237,8 @@ function EventHeads() {
           title="Vikrant kumar"
           description="Basketball Secretary"
           large={false}
+          instagram="https://www.instagram.com/_iso_v/"
+          linkedin="https://www.linkedin.com/in/vikrant-kumar-4027501ba/"
           demo={
             <>
               <Image
@@ -230,6 +254,8 @@ function EventHeads() {
           title="Nisha"
           description="Basketball Secretary"
           large={false}
+          instagram="https://www.instagram.com/14840_nisha/"
+          linkedin="https://www.linkedin.com/in/nisha-dathak-70b458218/"
           demo={
             <>
               <Image
@@ -249,6 +275,8 @@ function EventHeads() {
           title="Karri akash"
           description="Badminton Secretary"
           large={false}
+          instagram="https://www.instagram.com/aakash_k_475/"
+          linkedin="https://www.linkedin.com/in/aakash-k-a7562a20a/"
           demo={
             <>
               <Image
@@ -264,6 +292,8 @@ function EventHeads() {
           title="Kamakshi dixit"
           description="Badminton Secretary"
           large={false}
+          instagram="https://www.instagram.com/_kamakshi.dixit_/"
+          linkedin="https://www.linkedin.com/in/kamakshi-dixit-101a21200/"
           demo={
             <>
               <Image
@@ -316,6 +346,8 @@ function EventHeads() {
           title="Uttkarsh singh"
           description="Squash Secretary"
           large={false}
+          instagram="https://www.instagram.com/uttkarsh.singh007/"
+          linkedin="https://www.linkedin.com/in/uttkarsh-singh-97a272164/"
           demo={
             <>
               <Image
@@ -331,6 +363,8 @@ function EventHeads() {
           title="Amruta patil"
           description="Squash Secretary"
           large={false}
+          instagram="https://www.instagram.com/amruta_patil_1111/"
+          linkedin="https://www.linkedin.com/in/amruta-patil-074057204/"
           demo={
             <>
               <Image
