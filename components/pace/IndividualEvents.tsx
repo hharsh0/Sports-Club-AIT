@@ -24,7 +24,7 @@ function IndividualEvents() {
           link="register/squash-individual"
         />
         <EventsCard
-          title="Badminton (individual)"
+          title="Lawn tennis (individual)"
           description="Open for Boys and Girls."
           demo={
             <>
@@ -36,7 +36,7 @@ function IndividualEvents() {
               />
             </>
           }
-          link="register/badminton-individual"
+          link="register/lawntennis-individual"
         />
         <EventsCard
           title="Table Tennis (individual)"
