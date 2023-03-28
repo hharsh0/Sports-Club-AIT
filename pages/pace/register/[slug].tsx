@@ -81,7 +81,7 @@ function Register() {
     setTeamMembers([...teamMembers, {}]);
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     // @ts-ignore: Object is possibly 'null'.
     const leaderName = document.getElementById("leader-name")?.value;
@@ -137,16 +137,9 @@ function Register() {
     console.log(body);
 
     try {
-      // if (uploaded) {
+      await projectFirestore.collection("teams").add(body);
       handleUploadButtonClick();
-      projectFirestore.collection("teams").add(body);
       setDone(true)
-      // console.log(done)
-      // // } 
-      // if (done) {
-      //   alert("Registration Successful!")
-      //   router.push("/");
-      // }
       if (count < 3) {
         setCount(count + 1);
       }
