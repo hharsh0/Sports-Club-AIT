@@ -1,4 +1,4 @@
-import { useState,useRef } from "react";
+import { useState,useRef, useEffect } from "react";
 import Steps from "../../../components/Steps";
 import { useRouter } from "next/router";
 import {projectFirestore, storage} from '../../../firebase/config'
@@ -126,15 +126,15 @@ function Register() {
 
     try {
       // if (uploaded) {
-        handleUploadButtonClick();
-        projectFirestore.collection("teams").add(body);
+      handleUploadButtonClick();
+      projectFirestore.collection("teams").add(body);
       setDone(true)
-      console.log(done)
-      // } 
-      if (done) {
-        alert("Registration Successful!")
-        router.push("/");
-      }
+      // console.log(done)
+      // // } 
+      // if (done) {
+      //   alert("Registration Successful!")
+      //   router.push("/");
+      // }
       if (count < 3) {
         setCount(count + 1);
       }
@@ -142,6 +142,13 @@ function Register() {
       alert(err);
     }
   };
+
+  useEffect(() => {
+    if (done) {
+      alert("Registration Successful!");
+      router.push("/");
+    }
+  }, [done]);
 
   return (
     <>
