@@ -1,7 +1,7 @@
 import { useState,useRef } from "react";
 import Steps from "../../../components/Steps";
 import { useRouter } from "next/router";
-import {projectFirestore} from '../../../firebase/config'
+import {projectFirestore, storage} from '../../../firebase/config'
 
 
 function Register() {
@@ -13,6 +13,35 @@ function Register() {
   const [selectedOptionGame, setSelectedOptionGame] = useState("");
   const [footballFormate, setFootballFormate] = useState("")
   const [gender, setGender] = useState("")
+  const [file, setFile] = useState<File | null>();
+  const [error, setError] = useState<any>(null);
+  const [uploaded, setUploaded] = useState(false);
+  const [done, setDone] = useState(false)
+
+
+  const handleFileInputChange = (event:any) => {
+    const selectedFile = event.target.files ? event.target.files[0] : null;
+    setFile(selectedFile);
+    if (file) {
+      setUploaded(true)
+    }
+  };
+
+  const handleUploadButtonClick = () => {
+    if (file) {
+      const fileRef = storage.ref().child(file.name);
+      fileRef
+        .put(file)
+        .then(() => {
+          console.log("File uploaded successfully!");
+        })
+        .catch((error) => {
+          setError(error.message);
+        });
+    } else {
+      setError("Please select a file to upload.");
+    }
+  };
 
   const handleOptionChange = (event: any) => {
     setSelectedOptionYear(event.target.value);
@@ -64,6 +93,8 @@ function Register() {
     const gameChoosen = document.getElementById("Game").value;
     // @ts-ignore: Object is possibly 'null'.
     const teamLeaderAddress = document.getElementById("Address").value;
+    // @ts-ignore: Object is possibly 'null'.
+    const transactionId = document.getElementById("transaction-number").value;
 
     const yearOfStudy = selectedOptionYear;
     const isTeamEvent = selectedOptionGame;
@@ -87,21 +118,29 @@ function Register() {
       isTeamEvent,
       teamMembersDetails,
       footballType,
-      playerGender
+      playerGender,
+      transactionId,
     };
 
     console.log(body);
 
     try {
-      projectFirestore.collection('teams').add(body)
+      // if (uploaded) {
+        handleUploadButtonClick();
+        projectFirestore.collection("teams").add(body);
+      setDone(true)
+      console.log(done)
+      // } 
+      if (done) {
+        alert("Registration Successful!")
+        router.push("/");
+      }
       if (count < 3) {
         setCount(count + 1);
       }
+    } catch (err) {
+      alert(err);
     }
-    catch (err) {
-      alert(err)
-    }
-
   };
 
   return (
@@ -343,7 +382,7 @@ function Register() {
                 </div>
               )}
               <div className="col-span-6 sm:col-span-3">
-                Gender (If Team event all members need to be of the gender choosen below!)
+                Category
                 <>
                   <div className="my-4 flex items-center">
                     <input
@@ -374,7 +413,7 @@ function Register() {
                       htmlFor="checked-checkbox"
                       className="ml-2 text-sm font-medium text-gray-900"
                     >
-                      Female (Except kabaddi)
+                      Female
                     </label>
                   </div>
                 </>
@@ -434,6 +473,53 @@ function Register() {
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
+              </div>
+              <div className="col-span-6 sm:col-span-3">
+                <div className="col-span-6 mt-4 text-2xl">Payment</div>
+                <div className="my-2 text-sm text-gray-800">
+                  Please make payment to the given upi id below
+                </div>
+                <div className="my-2 text-sm text-gray-800">
+                  UPI ID : kumarp4456@okaxis
+                </div>
+                <div className="relative mt-4 w-full">
+                  <input
+                    required
+                    type="file"
+                    id="file-input"
+                    name="file-input"
+                    className="absolute hidden"
+                    onChange={handleFileInputChange}
+                  />
+                  <label
+                    htmlFor="file-input"
+                    className="block w-full cursor-pointer rounded-lg bg-gray-200 p-4 transition-colors duration-300 hover:bg-gray-300 md:inline-block md:w-auto"
+                  >
+                    <span className="mb-2 block text-lg font-medium text-gray-700">
+                      Upload screenshot of payment
+                    </span>
+                    <span className="block text-sm text-gray-500">
+                      Max file size: 500 KB
+                    </span>
+                    <span className="text-green-500">{file && file.name}</span>
+                  </label>
+                  <span
+                    id="file-name"
+                    className="absolute inset-y-0 right-0 flex items-center pr-4 font-medium text-gray-600"
+                  />
+                </div>
+                {error && (
+                  <div className="my-2 text-sm text-red-500">{error}</div>
+                )}
+                <label className="mt-4 block text-sm font-medium text-gray-900">
+                  Enter transaction ID of UPI
+                </label>
+                <input
+                  required
+                  type="number"
+                  id="transaction-number"
+                  className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
+                />
               </div>
 
               <div className="col-span-6 flex w-full justify-between">
