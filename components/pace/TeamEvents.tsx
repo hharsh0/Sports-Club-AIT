@@ -176,6 +176,22 @@ function TeamEvents() {
           }
           link="register/tabletennis-team"
         />
+        <EventsCard
+          title="Chess"
+          description="It is Open FIDE rapid chess
+          tournament only for Boys."
+          demo={
+            <>
+              <Image
+                alt="pace-registration"
+                src="/pace/pace-chess.png"
+                width={300}
+                height={300}
+              />
+            </>
+          }
+          link="register/chess-boys"
+        />
       </div>
     </>
   );

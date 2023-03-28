@@ -393,7 +393,7 @@ function Register() {
                   </>
                 </div>
               )}
-              <div className="col-span-6 sm:col-span-3">
+              {slug !== "chess-boys" && slug !== "chess-girls" && <div className="col-span-6 sm:col-span-3">
                 Category
                 <>
                   <div className="my-4 flex items-center">
@@ -429,7 +429,7 @@ function Register() {
                     </label>
                   </div>
                 </>
-              </div>
+              </div>}
               <div className="col-span-6 mt-4 text-2xl">
                 Team Members Details
               </div>
@@ -511,7 +511,7 @@ function Register() {
                       Upload screenshot of payment
                     </span>
                     <span className="block text-sm text-gray-500">
-                      Max file size: 500 KB
+                      Max file size: 5 MB
                     </span>
                     <span className="text-green-500">{file && file.name}</span>
                   </label>

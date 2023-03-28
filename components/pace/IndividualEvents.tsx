@@ -67,7 +67,7 @@ function IndividualEvents() {
               />
             </>
           }
-          link="register/chess"
+          link="register/chess-girls"
         />
       </div>
     </>
