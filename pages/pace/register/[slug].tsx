@@ -1,7 +1,15 @@
 import { useState,useRef, useEffect } from "react";
 import Steps from "../../../components/Steps";
 import { useRouter } from "next/router";
-import {projectFirestore, storage} from '../../../firebase/config'
+import { projectFirestore, storage } from '../../../firebase/config'
+
+interface GameFees {
+  [key: string]: {
+    boys?: number;
+    girls?: number;
+    fees?: number;
+  };
+}
 
 
 function Register() {
@@ -16,7 +24,9 @@ function Register() {
   const [file, setFile] = useState<File | null>();
   const [error, setError] = useState<any>(null);
   const [uploaded, setUploaded] = useState(false);
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
+  const [amountBoys, setAmountBoys] = useState<number | undefined>();
+  const [amountGirls, setAmountGirls] = useState<number | undefined>();
 
 
   const handleFileInputChange = (event:any) => {
@@ -154,6 +164,40 @@ function Register() {
       router.push("/");
     }
   }, [done]);
+
+
+  const registrationFees: GameFees = {
+    "football": { boys: 1200, girls: 1000 },
+    "cricket": { boys: 3500, girls: 1500 },
+    "volleyball": { boys: 2000, girls: 1400 },
+    "basketball": { boys: 2500, girls: 1500 },
+    "badminton-team": { boys: 1300, girls: 900 },
+    "squash-team": { boys: 600, girls: 400 },
+    "lawn-tennis": { boys: 400, girls: 200 },
+    "tabletennis-team": { boys: 800, girls: 600 },
+    "kabaddi": { boys: 2000 },
+    "chess-boys": { boys: 600 },
+    "chess-girls": { girls: 100 },
+    "tabletennis-individual": { boys: 300, girls: 200 },
+    "squash-individual": { boys: 300, girls: 300 },
+    "lawntennis-individual": { boys: 400, girls: 200 },
+    "football6A": { boys: 1500, girls: 1000 },
+    "football11A": { boys: 3000 },
+    "badminton-mix": { boys: 500, girls: 500 },
+  };
+
+  
+
+  useEffect(() => {
+    if (slug) {
+      for (const game in registrationFees) {
+        if (slug === game) {
+          setAmountBoys(registrationFees[game].boys);
+          setAmountGirls(registrationFees[game].girls);
+        }
+      }
+    }
+  }, [])
 
   return (
     <>
@@ -393,43 +437,45 @@ function Register() {
                   </>
                 </div>
               )}
-              {slug !== "chess-boys" && slug !== "chess-girls" && <div className="col-span-6 sm:col-span-3">
-                Category
-                <>
-                  <div className="my-4 flex items-center">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value="male"
-                      checked={gender === "male"}
-                      onChange={handleGender}
-                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                    />
-                    <label
-                      htmlFor="default-checkbox"
-                      className="ml-2 text-sm font-medium text-gray-900"
-                    >
-                      Male
-                    </label>
-                  </div>
-                  <div className="mb-4 flex items-center">
-                    <input
-                      id="checked-checkbox"
-                      type="checkbox"
-                      value="female"
-                      checked={gender === "female"}
-                      onChange={handleGender}
-                      className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                    />
-                    <label
-                      htmlFor="checked-checkbox"
-                      className="ml-2 text-sm font-medium text-gray-900"
-                    >
-                      Female
-                    </label>
-                  </div>
-                </>
-              </div>}
+              {slug !== "chess-boys" && slug !== "chess-girls" && (
+                <div className="col-span-6 sm:col-span-3">
+                  Category
+                  <>
+                    <div className="my-4 flex items-center">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        value="male"
+                        checked={gender === "male"}
+                        onChange={handleGender}
+                        className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      />
+                      <label
+                        htmlFor="default-checkbox"
+                        className="ml-2 text-sm font-medium text-gray-900"
+                      >
+                        Male
+                      </label>
+                    </div>
+                    <div className="mb-4 flex items-center">
+                      <input
+                        id="checked-checkbox"
+                        type="checkbox"
+                        value="female"
+                        checked={gender === "female"}
+                        onChange={handleGender}
+                        className="h-6 w-6 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      />
+                      <label
+                        htmlFor="checked-checkbox"
+                        className="ml-2 text-sm font-medium text-gray-900"
+                      >
+                        Female
+                      </label>
+                    </div>
+                  </>
+                </div>
+              )}
               <div className="col-span-6 mt-4 text-2xl">
                 Team Members Details
               </div>
@@ -489,7 +535,9 @@ function Register() {
               <div className="col-span-6 sm:col-span-3">
                 <div className="col-span-6 mt-4 text-2xl">Payment</div>
                 <div className="my-2 text-sm text-gray-800">
-                  Please make payment to the given upi id below
+                  Please make payment of the amount shown below
+                  <p>Boys: {amountBoys}</p>
+                  <p>Girls: {amountGirls}</p>
                 </div>
                 <div className="my-2 text-sm text-gray-800">
                   UPI ID : kumarp4456@okaxis
