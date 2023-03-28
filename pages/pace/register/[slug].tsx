@@ -84,17 +84,17 @@ function Register() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     // @ts-ignore: Object is possibly 'null'.
-    const leaderName = document.getElementById("leader-name").value;
+    const leaderName = document.getElementById("leader-name")?.value;
     // @ts-ignore: Object is possibly 'null'.
-    const collegeName = document.getElementById("college-name").value;
+    const collegeName = document.getElementById("college-name")?.value;
     // @ts-ignore: Object is possibly 'null'.
-    const teamLeaderEmail = document.getElementById("leader-email").value;
+    const teamLeaderEmail = document.getElementById("leader-email")?.value;
     // @ts-ignore: Object is possibly 'null'.
-    const gameChoosen = document.getElementById("Game").value;
+    const gameChoosen = document.getElementById("Game")?.value;
     // @ts-ignore: Object is possibly 'null'.
-    const teamLeaderAddress = document.getElementById("Address").value;
+    const teamLeaderAddress = document.getElementById("Address")?.value;
     // @ts-ignore: Object is possibly 'null'.
-    const transactionId = document.getElementById("transaction-number").value;
+    const transactionId = document.getElementById("transaction-number")?.value;
 
     const yearOfStudy = selectedOptionYear;
     const isTeamEvent = selectedOptionGame;
@@ -107,6 +107,18 @@ function Register() {
       // @ts-ignore: Object is possibly 'null'.
       email: document.getElementById(`teamMemberEmail${index}`).value,
     }));
+
+     if (
+       !leaderName ||
+       !collegeName ||
+       !teamLeaderEmail ||
+       !gameChoosen ||
+       !teamLeaderAddress ||
+       !transactionId
+     ) {
+       alert("Please fill out all the required fields.");
+       return;
+     }
 
     const body = {
       leaderName,
