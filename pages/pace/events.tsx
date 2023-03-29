@@ -28,7 +28,7 @@ function Events() {
             <button
               onClick={() =>
                 router.push(
-                  "https://drive.google.com/file/d/1U51Hp_o-CiurU8eV0Gm9FKrfIXem4t6W/view?usp=sharing",
+                  https://drive.google.com/file/d/12huWka121TSuqTpsw-gFPZNHibQEkekk/view?usp=sharing,
                 )
               }
               className="flex max-w-fit cursor-pointer items-center justify-between space-x-4 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
@@ -49,7 +49,7 @@ function Events() {
                   />
                 </svg>
               </div>
-              Download brochure
+              Download Rulebook
             </button>
           </div>
           {/* Image */}
