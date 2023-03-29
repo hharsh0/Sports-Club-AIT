@@ -540,7 +540,7 @@ function Register() {
                   <p>Girls: {amountGirls}</p>
                 </div>
                 <div className="my-2 text-sm text-gray-800">
-                  UPI ID : kumarp4456@okaxis
+                  UTR ID : kumarp4456@okaxis
                 </div>
                 <div className="relative mt-4 w-full">
                   <input

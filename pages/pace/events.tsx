@@ -15,7 +15,7 @@ function Events() {
       <div className="relative my-4 flex w-screen flex-col items-center">
         <div className="flex w-full max-w-screen-xl flex-col items-center justify-between px-5 md:flex-row lg:flex-row">
           {/* Text */}
-          <div className="w-full flex flex-col justify-center items-center lg:items-start text-center md:w-1/2 md:text-start lg:w-1/2 lg:text-start">
+          <div className="flex w-full flex-col items-center justify-center text-center md:w-1/2 md:text-start lg:w-1/2 lg:items-start lg:text-start">
             <div className="text-5xl font-medium">Pace events</div>
             <div className="my-10 text-lg text-gray-600">
               The annual sports fest of AIT PUNE is one of the largest of its
@@ -50,6 +50,32 @@ function Events() {
                 </svg>
               </div>
               Download brochure
+            </button>
+            <button
+              onClick={() =>
+                router.push(
+                  "https://drive.google.com/file/d/1U51Hp_o-CiurU8eV0Gm9FKrfIXem4t6W/view?usp=sharing",
+                )
+              }
+              className="flex max-w-fit cursor-pointer items-center justify-between space-x-4 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </div>
+              Download rule book
             </button>
           </div>
           {/* Image */}
