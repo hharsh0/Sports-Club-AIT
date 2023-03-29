@@ -146,7 +146,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/chess/megha.jpeg"
                 width={200}
                 height={200}
               />
