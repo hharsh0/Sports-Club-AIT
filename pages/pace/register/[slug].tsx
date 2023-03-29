@@ -204,7 +204,7 @@ function Register() {
       <div className="relative my-4 flex w-screen flex-col items-center">
         <div className="my-10 w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] px-5 xl:px-0">
           <section id="form" className="mt-2">
-            <Steps count={count} />
+            {/* <Steps count={count} /> */}
             <form
               onSubmit={handleSubmit}
               className="mt-8 grid grid-cols-6 gap-6"
