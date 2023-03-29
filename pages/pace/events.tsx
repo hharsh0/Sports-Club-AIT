@@ -76,7 +76,7 @@ function Events() {
                   />
                 </svg>
               </div>
-              Download brochure
+              Download Brochure
             </button>
           </div>
           {/* Image */}
