@@ -534,11 +534,31 @@ function Register() {
               </div>
               <div className="col-span-6 sm:col-span-3">
                 <div className="col-span-6 mt-4 text-2xl">Payment</div>
-                <div className="my-2 text-sm text-gray-800">
-                  Please make payment of the amount shown below
-                  <p>Boys: {amountBoys}</p>
-                  <p>Girls: {amountGirls}</p>
-                </div>
+                {slug !== "football" && (
+                  <div className="my-2 text-sm text-gray-800">
+                    Please make payment of the amount shown below
+                    <p>Boys: {amountBoys}</p>
+                    <p>Girls: {amountGirls}</p>
+                  </div>
+                )}
+                {slug === "football" && footballFormate && (
+                  <div>
+                    <div className="my-2 text-sm text-gray-800">
+                      Please make payment of the amount shown below
+                      <p>
+                        Boys:{" "}
+                        {footballFormate === "6-per-side" ? "1500" : "3000"}
+                      </p>
+                      {footballFormate !== "11-per-side" && (
+                        <p>
+                          Girls:{" "}
+                          {footballFormate === "6-per-side" ? "1000" : ""}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 <div className="my-2 text-sm text-gray-800">
                   UPI ID : kumarp4456@okaxis
                 </div>
