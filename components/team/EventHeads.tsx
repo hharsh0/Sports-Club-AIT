@@ -272,7 +272,7 @@ function EventHeads() {
       <p className="mt-10 w-full max-w-screen-xl text-2xl">Badminton</p>
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <TeamCard
-          title="Karri akash"
+          title="Karri Aakash"
           description="Badminton Secretary"
           large={false}
           instagram="https://www.instagram.com/aakash_k_475/"
