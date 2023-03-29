@@ -2,6 +2,7 @@ import { useState,useRef, useEffect } from "react";
 import Steps from "../../../components/Steps";
 import { useRouter } from "next/router";
 import { projectFirestore, storage } from '../../../firebase/config'
+import Image from "next/image"
 
 interface GameFees {
   [key: string]: {
@@ -561,6 +562,9 @@ function Register() {
 
                 <div className="my-2 text-sm text-gray-800">
                   UPI ID : kumarp4456@okaxis
+                </div>
+                <div>
+                  <Image src="/princeupi.jpg" height={200} width={200} alt="upi" />
                 </div>
                 <div className="relative mt-4 w-full">
                   <input
