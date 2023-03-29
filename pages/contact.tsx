@@ -185,7 +185,7 @@ function Contact() {
                 </svg>
 
                 <a href="mailto:sportsclub@aitpune.edu.in">
-                  sportsclub@aitpune.edu.in
+                  sports@aitpune.edu.in
                 </a>
               </div>
               <div className="mt-2 flex items-center space-x-2 text-gray-600">
@@ -205,7 +205,7 @@ function Contact() {
                   />
                 </svg>
 
-                <a href="tel:+91 7355263246">+91 8571943594</a>
+                                <a href="tel:+91 8619623108 ">+91 8619623108</a>
               </div>
             </div>
           </div>
