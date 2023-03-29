@@ -281,7 +281,7 @@ function EventHeads() {
             <>
               <Image
                 alt="contact"
-                src="/team/core/arajeet.jpeg"
+                src="/team/eventHead/badminton/aakash.jpeg"
                 width={200}
                 height={200}
               />
