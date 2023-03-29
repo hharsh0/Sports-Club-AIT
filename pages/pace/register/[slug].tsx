@@ -29,6 +29,8 @@ function Register() {
   const [amountBoys, setAmountBoys] = useState<number | undefined>();
   const [amountGirls, setAmountGirls] = useState<number | undefined>();
 
+  console.log(slug)
+
 
   const handleFileInputChange = (event:any) => {
     const selectedFile = event.target.files ? event.target.files[0] : null;
@@ -198,7 +200,7 @@ function Register() {
         }
       }
     }
-  }, [])
+  }, [slug])
 
   return (
     <>
