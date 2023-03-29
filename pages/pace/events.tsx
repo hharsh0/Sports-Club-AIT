@@ -29,7 +29,7 @@ function Events() {
               <button
                 onClick={() =>
                   router.push(
-                    "https://drive.google.com/file/d/1fq-mX27MUtm-MIoFl7BRtLjyXNni_c1n/view",
+                    "https://drive.google.com/file/d/1U6y9KB9Vb2e2Bx5rpMgYaW4kp76JJT60/view",
                   )
                 }
                 className="flex max-w-fit cursor-pointer items-center justify-between space-x-4 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
@@ -55,7 +55,7 @@ function Events() {
               <button
                 onClick={() =>
                   router.push(
-                    "https://drive.google.com/file/d/12huWka121TSuqTpsw-gFPZNHibQEkekk/view?usp=sharing",
+                    "https://drive.google.com/file/d/1FQTzCMfXpxb6iIf4Gb2msJe08eAMRo6H/view",
                   )
                 }
                 className="flex max-w-fit cursor-pointer items-center justify-between space-x-4 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
