@@ -540,7 +540,7 @@ function Register() {
                   <p>Girls: {amountGirls}</p>
                 </div>
                 <div className="my-2 text-sm text-gray-800">
-                  UTR ID : kumarp4456@okaxis
+                  UPI ID : kumarp4456@okaxis
                 </div>
                 <div className="relative mt-4 w-full">
                   <input
@@ -572,7 +572,7 @@ function Register() {
                   <div className="my-2 text-sm text-red-500">{error}</div>
                 )}
                 <label className="mt-4 block text-sm font-medium text-gray-900">
-                  Enter transaction ID of UPI
+                  Enter transaction ID of UPI (UTR ID)
                 </label>
                 <input
                   required
