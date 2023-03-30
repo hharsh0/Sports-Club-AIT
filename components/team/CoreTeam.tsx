@@ -111,6 +111,23 @@ function CoreTeam() {
           }
         />
         <TeamCard
+          title="Harshvardhan"
+          description="Technical Head "
+          large={false}
+          instagram="https://www.instagram.com/hharsh_311/"
+          linkedin="https://www.linkedin.com/in/harsh-vardhan-222120228/"
+          demo={
+            <>
+              <Image
+                alt="contact"
+                src="/team/core/temembers/harsh.jpeg"
+                width={200}
+                height={200}
+              />
+            </>
+          }
+        />
+        <TeamCard
           title="Sahil Chahal"
           description="TE Member"
           large={false}
