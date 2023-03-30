@@ -133,7 +133,7 @@ function TeamEvents() {
             <>
               <Image
                 alt="pace-registration"
-                src="/pace/pace-cricket.png"
+                src="/pace/kabaddi.png"
                 width={300}
                 height={300}
               />
