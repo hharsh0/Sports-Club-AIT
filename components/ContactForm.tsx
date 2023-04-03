@@ -62,7 +62,7 @@ function ContactForm() {
           </div> */}
         </div>
         <button
-          className="w-full rounded border-2 border-transparent bg-black lg:px-6  lg:py-3 text-center text-white ring-gray-200 ring-offset-2 transition hover:bg-slate-900 focus-visible:ring-2 md:px-5 md:py-2.5"
+          className="w-full rounded border-2 border-transparent bg-black lg:px-6 py-3 text-center text-white ring-gray-200 ring-offset-2 transition hover:bg-slate-900 focus-visible:ring-2 md:px-5 md:py-2.5"
           type="submit"
         >
           Send Message
