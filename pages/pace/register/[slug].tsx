@@ -108,6 +108,8 @@ function Register() {
     const teamLeaderAddress = document.getElementById("Address")?.value;
     // @ts-ignore: Object is possibly 'null'.
     const transactionId = document.getElementById("transaction-number")?.value;
+    // @ts-ignore: Object is possibly 'null'.
+    const phoneNumber = document.getElementById("PhoneNumber")?.value;
 
     const yearOfStudy = selectedOptionYear;
     const isTeamEvent = selectedOptionGame;
@@ -121,17 +123,18 @@ function Register() {
       email: document.getElementById(`teamMemberEmail${index}`).value,
     }));
 
-     if (
-       !leaderName ||
-       !collegeName ||
-       !teamLeaderEmail ||
-       !gameChoosen ||
-       !teamLeaderAddress ||
-       !transactionId
-     ) {
-       alert("Please fill out all the required fields.");
-       return;
-     }
+    if (
+      !leaderName ||
+      !collegeName ||
+      !teamLeaderEmail ||
+      !gameChoosen ||
+      !teamLeaderAddress ||
+      !transactionId || 
+      !phoneNumber
+    ) {
+      alert("Please fill out all the required fields.");
+      return;
+    }
 
     const body = {
       leaderName,
@@ -145,6 +148,7 @@ function Register() {
       footballType,
       playerGender,
       transactionId,
+      phoneNumber
     };
 
     console.log(body);
@@ -152,7 +156,7 @@ function Register() {
     try {
       await projectFirestore.collection("teams").add(body);
       handleUploadButtonClick();
-      setDone(true)
+      setDone(true);
       if (count < 3) {
         setCount(count + 1);
       }
@@ -261,7 +265,6 @@ function Register() {
                 <input
                   type="number"
                   id="PhoneNumber"
-                  name="password"
                   className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-900 shadow-sm"
                 />
               </div>
