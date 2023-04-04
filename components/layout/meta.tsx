@@ -4,9 +4,13 @@ import { useRouter } from "next/router";
 
 const DOMAIN = "";
 
+const capitalizeFirstLetter = (str:string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
 
 export default function Meta({
-  title = "Ait Sports club",
+  title = "AIT SPORTS CLUB",
   description = "Ait sports club website",
   image = ``,
 }: {
@@ -18,14 +22,14 @@ export default function Meta({
    const router = useRouter();
 
    let routeName = router.pathname.substr(1);
-   if (routeName.length === 0) {
-     routeName = "Home";
-   }
+  //  if (routeName.length === 0) {
+  //    routeName = "Home";
+  //  }
   
 
   return (
     <Head>
-      <title>{`${routeName} | Ait`}</title>
+      <title>{`${title} ${routeName && "|"} ${routeName && capitalizeFirstLetter(routeName)}`}</title>
       <meta name="description" content={description} />
       <link rel="icon" href="/sportslogo-modified.png" />
 
@@ -34,11 +38,6 @@ export default function Meta({
       <meta itemProp="image" content={image} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {/* <meta property="og:image" content={image} /> */}
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@vercel" />
-      <meta name="twitter:creator" content="@steventey" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
