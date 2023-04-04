@@ -2,23 +2,34 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 function generateSiteMap({
   hostname,
-  users,
+  pages,
+  dynamicRoutes,
 }: {
   hostname: string;
-  users: string[];
+  pages: string[];
+  dynamicRoutes: string[];
 }) {
   return `<?xml version="1.0" encoding="UTF-8"?>
      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
        <url>
          <loc>${hostname}</loc>
        </url>
-       ${users
-         .map((username) => {
+       ${pages
+         .map((page) => {
            return `
-         <url>
-             <loc>${`${hostname}/${username}`}</loc>
-         </url>
-       `;
+        <url>
+          <loc>${`${hostname}/${page}`}</loc>
+        </url>
+      `;
+         })
+         .join("")}
+       ${dynamicRoutes
+         .map((route) => {
+           return `
+        <url>
+          <loc>${`${hostname}/${route}`}</loc>
+        </url>
+      `;
          })
          .join("")}
      </urlset>
@@ -36,19 +47,15 @@ export async function getServerSideProps({
   req: NextApiRequest;
   res: NextApiResponse;
 }) {
-  const hostname = `https://precedent.dev`;
-
-  // Generate dynamic data for the sitemap
-  //   const users = await prisma.user.findMany({
-  //     select: {
-  //       username: true,
-  //     },
-  //   });
+  const hostname = `https://www.aitsportsclub.com/`;
+  const pages = ["gallery", "team", "contact", "pace/events"];
+  const dynamicRoutes = ["pace/register/[slug]"];
 
   // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap({
     hostname,
-    users: [],
+    pages,
+    dynamicRoutes,
   });
 
   res.setHeader("Content-Type", "text/xml");
