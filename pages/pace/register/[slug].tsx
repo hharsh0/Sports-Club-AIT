@@ -482,7 +482,7 @@ function Register() {
                   </>
                 </div>
               )}
-              <div className="col-span-6 mt-4 text-2xl">
+              <div className={`col-span-6 mt-4 text-2xl ${slug === "cricket"? 'invisible': 'a'}`}>
                 Team Members Details
               </div>
               {teamMembers.map((teamMember: any, index: any) => (
@@ -519,7 +519,7 @@ function Register() {
                   />
                 </div>
               ))}
-              <div
+              {slug !== "cricket" && <div
                 onClick={handleAddTeamMember}
                 className="col-span-6 flex h-20 w-20 cursor-pointer items-center justify-center bg-white drop-shadow duration-500 hover:scale-110"
               >
@@ -537,7 +537,7 @@ function Register() {
                     d="M12 4.5v15m7.5-7.5h-15"
                   />
                 </svg>
-              </div>
+              </div>}
               <div className="col-span-6 sm:col-span-3">
                 <div className="col-span-6 mt-4 text-2xl">Payment</div>
                 {slug !== "football" && (
