@@ -482,7 +482,11 @@ function Register() {
                   </>
                 </div>
               )}
-              <div className={`col-span-6 mt-4 text-2xl ${slug === "cricket"? 'invisible': 'a'}`}>
+              <div
+                className={`col-span-6 mt-4 text-2xl ${
+                  slug === "cricket" ? "invisible" : "a"
+                }`}
+              >
                 {"Team Members Details (Optional)"}
               </div>
               {teamMembers.map((teamMember: any, index: any) => (
@@ -519,25 +523,27 @@ function Register() {
                   />
                 </div>
               ))}
-              {slug !== "cricket" && <div
-                onClick={handleAddTeamMember}
-                className="col-span-6 flex h-20 w-20 cursor-pointer items-center justify-center bg-white drop-shadow duration-500 hover:scale-110"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="h-6 w-6"
+              {slug !== "cricket" && (
+                <div
+                  onClick={handleAddTeamMember}
+                  className="col-span-6 flex h-20 w-20 cursor-pointer items-center justify-center bg-white drop-shadow duration-500 hover:scale-110"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
-              </div>}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </div>
+              )}
               <div className="col-span-6 sm:col-span-3">
                 <div className="col-span-6 mt-4 text-2xl">Payment</div>
                 {slug !== "football" && (
@@ -566,10 +572,19 @@ function Register() {
                 )}
 
                 <div className="my-2 text-sm text-gray-800">
-                  UPI ID : kumarp4456@okaxis
+                  <p>UPI ID : kumarp4456@okaxis</p>
+                  <p className="text-gray-600">
+                    Incase of any issue please contact{" "}
+                    <a href="tel:+91 8789522207">+91 8789522207</a>
+                  </p>
                 </div>
                 <div>
-                  <Image src="/princeupi.jpg" height={200} width={200} alt="upi" />
+                  <Image
+                    src="/princeupi.jpg"
+                    height={200}
+                    width={200}
+                    alt="upi"
+                  />
                 </div>
                 <div className="relative mt-4 w-full">
                   <input

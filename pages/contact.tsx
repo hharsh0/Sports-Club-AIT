@@ -203,7 +203,7 @@ function Contact() {
                   />
                 </svg>
 
-                <a href="tel:+91 8619623108 ">+91 8619623108</a>
+                <a href="tel:+91 9421938430">+91 94219 38430</a>
               </div>
               <div className="mt-2 flex items-center space-x-2 text-gray-600">
                 {/* <Icon className="h-4 w-4 text-gray-400" name="uil:phone" /> */}
