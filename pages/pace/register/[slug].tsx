@@ -483,7 +483,7 @@ function Register() {
                 </div>
               )}
               <div className={`col-span-6 mt-4 text-2xl ${slug === "cricket"? 'invisible': 'a'}`}>
-                Team Members Details
+                {"Team Members Details (Optional)"}
               </div>
               {teamMembers.map((teamMember: any, index: any) => (
                 <div key={index} className="col-span-6 sm:col-span-3">
