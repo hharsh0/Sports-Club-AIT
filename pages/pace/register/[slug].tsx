@@ -581,7 +581,7 @@ function Register() {
                     <a href="tel:+91 8789522207">+91 8789522207</a>
                   </p>
                 </div> */}
-                <div className='my-4'>
+                <div className="my-4">
                   <Image
                     src="/aitbank.png"
                     height={200}
@@ -597,9 +597,8 @@ function Register() {
                   <p>Branch : Bhosari branch</p>
                   <p>IFSC Code : ICIC0002152</p>
                   <p className="text-gray-600">
-                    This is a savings account,
-                    Incase of any issue please contact{" "}
-                    <a href="tel:+91 8789522207">+91 8789522207</a>
+                    This is a savings account, Incase of any issue please
+                    contact <a href="tel:+91 9097197834">+91 9097197834</a>
                   </p>
                 </div>
                 <div className="relative mt-4 w-full">
