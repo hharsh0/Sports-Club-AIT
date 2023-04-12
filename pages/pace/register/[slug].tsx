@@ -136,6 +136,8 @@ function Register() {
       return;
     }
 
+    const currentDate = new Date().toLocaleDateString();
+
     const body = {
       leaderName,
       collegeName,
@@ -148,7 +150,8 @@ function Register() {
       footballType,
       playerGender,
       transactionId,
-      phoneNumber
+      phoneNumber,
+      dateOfRegistration: currentDate,
     };
 
     console.log(body);
@@ -586,6 +589,7 @@ function Register() {
                     alt="upi"
                   />
                 </div>
+                <p>OR</p>
                 <div className="my-2 text-sm text-gray-800">
                   <p>Account Name : Army institute of technology</p>
                   <p>Account Number : 215201000341</p>
@@ -628,8 +632,7 @@ function Register() {
                   <div className="my-2 text-sm text-red-500">{error}</div>
                 )}
                 <label className="mt-4 block text-sm font-medium text-gray-900">
-                  Enter transaction ID
-                  {/* of UPI (UTR ID) */}
+                  {"Enter transaction ID or UTR ID"}
                 </label>
                 <input
                   required
