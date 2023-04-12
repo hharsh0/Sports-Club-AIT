@@ -587,6 +587,7 @@ function Register() {
                   />
                 </div> */}
                 <div className="my-2 text-sm text-gray-800">
+                  <p>Account Name : Army institute of technology</p>
                   <p>Account Number : 215201000341</p>
                   <p>Bank : ICICI BANK LTD</p>
                   <p>Branch : Bhosari branch</p>
