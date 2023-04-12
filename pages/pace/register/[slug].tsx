@@ -578,14 +578,14 @@ function Register() {
                     <a href="tel:+91 8789522207">+91 8789522207</a>
                   </p>
                 </div> */}
-                {/* <div>
+                <div className='my-4'>
                   <Image
-                    src="/princeupi.jpg"
+                    src="/aitbank.png"
                     height={200}
                     width={200}
                     alt="upi"
                   />
-                </div> */}
+                </div>
                 <div className="my-2 text-sm text-gray-800">
                   <p>Account Name : Army institute of technology</p>
                   <p>Account Number : 215201000341</p>
