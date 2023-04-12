@@ -571,20 +571,30 @@ function Register() {
                   </div>
                 )}
 
-                <div className="my-2 text-sm text-gray-800">
+                {/* <div className="my-2 text-sm text-gray-800">
                   <p>UPI ID : kumarp4456@okaxis</p>
                   <p className="text-gray-600">
                     Incase of any issue please contact{" "}
                     <a href="tel:+91 8789522207">+91 8789522207</a>
                   </p>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <Image
                     src="/princeupi.jpg"
                     height={200}
                     width={200}
                     alt="upi"
                   />
+                </div> */}
+                <div className="my-2 text-sm text-gray-800">
+                  <p>Account Number : 215201000341</p>
+                  <p>Bank : ICICI BANK LTD</p>
+                  <p>Branch : Bhosari branch</p>
+                  <p>IFSC Code : ICIC0002152</p>
+                  <p className="text-gray-600">
+                    Incase of any issue please contact{" "}
+                    <a href="tel:+91 8789522207">+91 8789522207</a>
+                  </p>
                 </div>
                 <div className="relative mt-4 w-full">
                   <input
@@ -616,7 +626,8 @@ function Register() {
                   <div className="my-2 text-sm text-red-500">{error}</div>
                 )}
                 <label className="mt-4 block text-sm font-medium text-gray-900">
-                  Enter transaction ID of UPI (UTR ID)
+                  Enter transaction ID
+                  {/* of UPI (UTR ID) */}
                 </label>
                 <input
                   required
