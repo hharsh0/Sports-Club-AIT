@@ -24,8 +24,8 @@ export default async function handler(
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: "perfect4mystery@gmail.com",
-      pass: "Arajeet@123",
+      user: "",
+      pass: "",
     },
   });
 
