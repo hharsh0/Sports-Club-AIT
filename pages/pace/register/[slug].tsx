@@ -130,7 +130,8 @@ function Register() {
       !gameChoosen ||
       !teamLeaderAddress ||
       !transactionId || 
-      !phoneNumber
+      !phoneNumber ||
+      !file
     ) {
       alert("Please fill out all the required fields.");
       return;
@@ -607,7 +608,7 @@ function Register() {
                     type="file"
                     id="file-input"
                     name="file-input"
-                    className="absolute hidden"
+                    className="absolute opacity-0"
                     onChange={handleFileInputChange}
                   />
                   <label
