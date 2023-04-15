@@ -65,7 +65,7 @@ function Timeline() {
                     Registration Closes
                   </h2>
                   <p className="leading-relaxed">
-                    Registration for PACE 2023 closes on 10th April 2023.
+                    Registration for PACE 2023 closes on 20th April 2023.
                   </p>
                 </div>
               </div>
