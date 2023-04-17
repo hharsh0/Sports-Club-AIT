@@ -575,28 +575,28 @@ function Register() {
                   </div>
                 )}
 
-                {/* <div className="my-2 text-sm text-gray-800">
-                  <p>UPI ID : kumarp4456@okaxis</p>
+                <div className="my-2 text-sm text-gray-800">
+                  <p>UPI ID : swatisalunkhe123@okaxis</p>
                   <p className="text-gray-600">
                     Incase of any issue please contact{" "}
-                    <a href="tel:+91 8789522207">+91 8789522207</a>
+                    <a href="tel:+91 9097197834">+91 9097197834</a>
                   </p>
-                </div> */}
+                </div>
                 <div className="my-4">
                   <Image
-                    src="/aitbank.png"
+                    src="/swatisalunkhe.png"
                     height={200}
                     width={200}
                     alt="upi"
                   />
                 </div>
-                <p>OR</p>
+                {/* <p>OR</p> */}
                 <div className="my-2 text-sm text-gray-800">
-                  <p>Account Name : Army institute of technology</p>
+                  {/* <p>Account Name : Army institute of technology</p>
                   <p>Account Number : 215201000341</p>
                   <p>Bank : ICICI BANK LTD</p>
                   <p>Branch : Bhosari branch</p>
-                  <p>IFSC Code : ICIC0002152</p>
+                  <p>IFSC Code : ICIC0002152</p> */}
                   <p className="text-gray-600">
                     This is a savings account, Incase of any issue please
                     contact <a href="tel:+91 9097197834">+91 9097197834</a>
