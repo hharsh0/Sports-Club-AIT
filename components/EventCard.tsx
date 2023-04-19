@@ -10,12 +10,14 @@ export default function EventsCard({
   demo,
   large,
   link,
+  registrationOpen
 }: {
   title: string;
   description: string;
   demo: ReactNode;
   large?: boolean;
   link: string;
+  registrationOpen?: boolean;
 }) {
   const router = useRouter();
   return (
@@ -57,10 +59,13 @@ export default function EventsCard({
         </div>
         <div className="mb-4">
           <button
-            onClick={()=>router.push(link)}
-            className="focus:shadow-outline rounded bg-gray-800 py-2 px-4 font-normal text-white hover:bg-gray-900 focus:outline-none"
+            onClick={() => router.push(link)}
+            className={`${
+              !registrationOpen && "pointer-events-none opacity-50"
+            } focus:shadow-outline rounded bg-gray-800 py-2 px-4 font-normal text-white hover:bg-gray-900 focus:outline-none`}
           >
-            Register
+            {registrationOpen && "Register"}
+            {!registrationOpen && "Registeration Closed"}
           </button>
         </div>
       </div>

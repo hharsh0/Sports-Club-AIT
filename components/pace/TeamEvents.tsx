@@ -8,6 +8,7 @@ function TeamEvents() {
       <div className="my-10 grid w-full max-w-screen-xl animate-[slide-down-fade_0.5s_ease-in-out] grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <EventsCard
           title="Cricket"
+          registrationOpen={false}
           description="
           Event for Boys and Girls.        
           Players required are 11+5 for Boys and 7+4 for Girls.
@@ -27,6 +28,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Basketball"
+          registrationOpen={false}
           description="Minimum 8 Players per team.  Time for Boys: 4 quaters 10 min each & Girls: 4 quaters 7 min each."
           demo={
             <>
@@ -42,6 +44,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Football"
+          registrationOpen={false}
           description="Event for Boys and Girls.
           Event type: 6-a Side and 11-a side.        
           Maximum 5 substitutions are allowed in 11-a side."
@@ -59,6 +62,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Badminton"
+          registrationOpen={false}
           description="Event type-Team.        
           Men's team 5 to 7 players, Women's team 2 to 4 players."
           demo={
@@ -75,6 +79,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Lawn Tennis"
+          registrationOpen={false}
           description="Individual Event for Boys and Girls.
           Rules adhere to ITA standards utilizing a 15-30-45 system."
           demo={
@@ -91,6 +96,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Badminton (mix)"
+          registrationOpen={false}
           description="Event type-Mixed.        
           Players required: Men's team 5 to 7 players, Women's team 2 to 4 players."
           demo={
@@ -107,6 +113,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Volleyball"
+          registrationOpen={false}
           description="Each Team will have 12 players.  
           Prelims & Semis: 25-25-15.
           Finals:25-25-25-25-15.
@@ -126,6 +133,7 @@ function TeamEvents() {
 
         <EventsCard
           title="Kabaddi"
+          registrationOpen={true}
           description="Players required : 7+5.
           It will be Knockout.
           Only for Boys."
@@ -144,6 +152,7 @@ function TeamEvents() {
 
         <EventsCard
           title="Squash (Team)"
+          registrationOpen={false}
           description="Individual Event .
           Open for Boys Only.
           Non marking shoes compulsory."
@@ -161,6 +170,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Table Tennis (Team)"
+          registrationOpen={false}
           description="Players required : 3 to 5 per team.
           Score: knockout- Best of 3.
           Semi Finals- Best of 5."
@@ -178,6 +188,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Chess"
+          registrationOpen={true}
           description="It is Open FIDE rapid chess
           tournament only for Boys."
           demo={
