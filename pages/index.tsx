@@ -169,3 +169,4 @@ const features = [
     link: "/gallery",
   },
 ];
+

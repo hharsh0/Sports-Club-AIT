@@ -4,6 +4,187 @@ function Footer() {
   return (
     <>
       <footer className="body-font text-gray-600">
+
+      <div className="lg: bg-white-800 lg:py-5 w-full">
+  <div className="py-8" />
+  <div className="sm:max-w-5xl pt-8 rounded-xl bg-white mx-4 sm:mx-8 md:mx-auto">
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h1 className="focus:outline-none xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pt-4">
+        Meet Our Sponsors
+      </h1>
+    </div>
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Platinum Sponsors
+      </h3>
+    </div>
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://www.udchalo.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16 "
+            src="assets/img/udChalo.png"
+            alt="devfolio"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-24 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://www.bharatforge.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16 "
+            src="assets/Untitled design (1).png"
+            alt="bharatforge"
+            role="img"
+          />
+        </a>
+      </div>
+    </div>
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Gold Sponsors
+      </h3>
+    </div>
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://devfolio.co/">
+          <img
+            className="focus:outline-none w-12 sm:w-16 "
+            src="assets/Logo@2x.png"
+            alt="devfolio"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+        <a href="https://polygon.technology/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/polygon-token.svg"
+            alt="Chanel"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+        <a href="https://nurserylive.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/Nurserylive Logo.png"
+            alt="Chanel"
+            role="img"
+          />
+        </a>
+      </div>
+    </div>
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Bronze Sponsors
+      </h3>
+    </div>
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap items-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex  justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://filecoin.io/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/filecoin-logo.svg"
+            alt="Nike"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://replit.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/Prompt-Logo-Transparent@2048.png"
+            alt="Toyota"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://solana.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/solanaLogoMark.svg"
+            alt="Toyota"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://gen.xyz/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/xyz-logo-color.svg"
+            alt="Toyota"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex scale-125 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-100 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://stockgro.club/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/1673523491547-removebg-preview (1) 1.png"
+            alt="Toyota"
+            role="img"
+          />
+        </a>
+      </div>
+      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://www.freightfox.ai/">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="assets/img/logo-full.svg"
+            alt="Toyota"
+            role="img"
+          />
+        </a>
+      </div>
+    </div>
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Food Sponsors
+      </h3>
+    </div>
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="https://www.budhanibros.com/">
+          <img
+            className="focus:outline-none w-12 sm:w-16 "
+            src="\budhani bros.png"
+            alt="devfolio"
+            role="img"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="">
+          <img
+            className="focus:outline-none w-12 sm:w-16 "
+            src="\uncle (1)-Recovered.png"
+            alt="devfolio"
+            role="img"
+          />
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
         <div className="bg-transparent">
           <div className="container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row">
             <p className="text-center text-sm text-gray-500 sm:text-left">
@@ -80,6 +261,10 @@ function Footer() {
             </span>
           </div>
         </div>
+
+
+
+        
       </footer>
     </>
   );
