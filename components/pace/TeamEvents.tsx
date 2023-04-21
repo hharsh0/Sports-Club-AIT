@@ -188,7 +188,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Chess"
-          registrationOpen={true}
+          registrationOpen={false}
           description="It is Open FIDE rapid chess
           tournament only for Boys."
           demo={
