@@ -79,7 +79,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Lawn Tennis"
-          registrationOpen={true}
+          registrationOpen={false}
           description="Individual Event for Boys and Girls.
           Rules adhere to ITA standards utilizing a 15-30-45 system."
           demo={
@@ -188,7 +188,7 @@ function TeamEvents() {
         />
         <EventsCard
           title="Chess"
-          registrationOpen={false}
+          registrationOpen={true}
           description="It is Open FIDE rapid chess
           tournament only for Boys."
           demo={
