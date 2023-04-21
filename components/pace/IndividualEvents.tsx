@@ -26,7 +26,7 @@ function IndividualEvents() {
         />
         <EventsCard
           title="Lawn tennis (individual)"
-          registrationOpen={true}
+          registrationOpen={false}
           description="Open for Boys and Girls."
           demo={
             <>
