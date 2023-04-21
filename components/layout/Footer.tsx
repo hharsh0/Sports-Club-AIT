@@ -13,7 +13,7 @@ function Footer() {
         Meet Our Sponsors
       </h1>
     </div>
-    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+    {/* <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
       <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
         Platinum Sponsors
       </h3>
@@ -143,7 +143,7 @@ function Footer() {
           />
         </a>
       </div>
-    </div>
+    </div> */}
     <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
       <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
         Food Sponsors
