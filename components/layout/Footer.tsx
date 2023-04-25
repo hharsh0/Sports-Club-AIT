@@ -13,17 +13,17 @@ function Footer() {
         Meet Our Sponsors
       </h1>
     </div>
-    {/* <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
-      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      {/* <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
         Platinum Sponsors
-      </h3>
+      </h3> */}
     </div>
-    <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
+    {/* <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
       <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
         <a href="https://www.udchalo.com/">
           <img
             className="focus:outline-none w-12 sm:w-16 "
-            src="assets/img/udChalo.png"
+            src=""
             alt="devfolio"
             role="img"
           />
@@ -35,28 +35,30 @@ function Footer() {
             className="focus:outline-none w-12 sm:w-16 "
             src="assets/Untitled design (1).png"
             alt="bharatforge"
-            role="img"
+            role="img"  
           />
         </a>
       </div>
-    </div>
+    </div> */}
     <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
       <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
-        Gold Sponsors
+        Title Sponsor
       </h3>
     </div>
     <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
       <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <a href="https://devfolio.co/">
+        <a href="">
           <img
             className="focus:outline-none w-12 sm:w-16 "
-            src="assets/Logo@2x.png"
+            src="\udchalo (1).png"
             alt="devfolio"
             role="img"
+            width={400}
+            height={400}
           />
         </a>
       </div>
-      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+      {/* <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
         <a href="https://polygon.technology/">
           <img
             className="focus:outline-none w-12 sm:w-16"
@@ -65,8 +67,8 @@ function Footer() {
             role="img"
           />
         </a>
-      </div>
-      <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+      </div> */}
+      {/* <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
         <a href="https://nurserylive.com/">
           <img
             className="focus:outline-none w-12 sm:w-16"
@@ -75,25 +77,27 @@ function Footer() {
             role="img"
           />
         </a>
-      </div>
+      </div> */}
     </div>
     <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
       <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
-        Bronze Sponsors
+        Associate Sponsor
       </h3>
     </div>
     <div className="sm:py-6 px-8 sm:24 flex flex-wrap items-center lg:justify-center">
       <div className="w-1/3 sm:w-1/6 flex  justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
-        <a href="https://filecoin.io/">
+        <a href="">
           <img
             className="focus:outline-none w-12 sm:w-16"
-            src="assets/filecoin-logo.svg"
+            src="\techno.png"
             alt="Nike"
             role="img"
+            height={300} 
+            width={300}
           />
         </a>
       </div>
-      <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      {/* <div className="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
         <a href="https://replit.com/">
           <img
             className="focus:outline-none w-12 sm:w-16"
@@ -142,11 +146,33 @@ function Footer() {
             role="img"
           />
         </a>
-      </div>
-    </div> */}
+      </div> */}
+    </div>
+
     <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
       <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
-        Food Sponsors
+        Youth and media partner
+      </h3>
+    </div>
+    <div className="sm:py-6 px-8 sm:24 flex flex-wrap items-center lg:justify-center">
+      <div className="w-1/3 sm:w-1/6 flex  justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+        <a href="">
+          <img
+            className="focus:outline-none w-12 sm:w-16"
+            src="\campus.png"
+            alt="Nike"
+            role="img"
+            height={300} 
+            width={300}
+          />
+        </a>
+      </div>
+      </div>
+
+    
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Food Sponsor
       </h3>
     </div>
     <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
@@ -155,30 +181,36 @@ function Footer() {
           <img
             className="focus:outline-none w-12 sm:w-16 "
             src="\budhani bros.png"
-            alt="devfolio"
+            alt="budhani  bros "
             role="img"
           />
         </a>
       </div>
     </div>
 
+    <div className="w-11/12 sm:w-2/3 mx-auto mb-10">
+      <h3 className="focus:outline-none xl:text-2xl text-xl text-center text-gray-800 font-extrabold pt-4">
+        Event Sponsor
+      </h3>
+    </div>
     <div className="sm:py-6 px-8 sm:24 flex flex-wrap justify-center lg:justify-center">
       <div className="w-1/3 sm:w-1/6 flex scale-150 justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-125 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
         <a href="">
           <img
             className="focus:outline-none w-12 sm:w-16 "
             src="\uncle (1)-Recovered.png"
-            alt="devfolio"
+            alt="uncle kitchen "
             role="img"
           />
         </a>
       </div>
     </div>
 
-
   </div>
 
 </div>
+
+
 
 
 
